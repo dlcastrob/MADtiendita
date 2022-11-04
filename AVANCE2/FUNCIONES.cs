@@ -7,6 +7,7 @@ using System.Text.RegularExpressions;
 namespace AVANCE2
 {
     //jeje
+    //SESESESEROOOOOOOOOOOOOOOOOOOOOOOOO
     public static class FUNCIONES
     {
 
