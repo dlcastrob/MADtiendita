@@ -30,10 +30,10 @@ namespace AVANCE2
         private void InitializeComponent()
         {
             this.lbtitulo = new System.Windows.Forms.Label();
-            this.btnPercepciones = new System.Windows.Forms.Button();
-            this.btnNomina = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnRecibos = new System.Windows.Forms.Button();
+            this.btnCAJEROS = new System.Windows.Forms.Button();
+            this.btnProductos = new System.Windows.Forms.Button();
+            this.btnVentas = new System.Windows.Forms.Button();
+            this.btnInventario = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnReportes = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -48,45 +48,45 @@ namespace AVANCE2
             this.lbtitulo.TabIndex = 0;
             this.lbtitulo.Text = "Bienvenido! Que desea hacer?";
             // 
-            // btnPercepciones
+            // btnCAJEROS
             // 
-            this.btnPercepciones.Location = new System.Drawing.Point(12, 70);
-            this.btnPercepciones.Name = "btnPercepciones";
-            this.btnPercepciones.Size = new System.Drawing.Size(229, 66);
-            this.btnPercepciones.TabIndex = 1;
-            this.btnPercepciones.Text = "Gestion Cajeros";
-            this.btnPercepciones.UseVisualStyleBackColor = true;
-            this.btnPercepciones.Click += new System.EventHandler(this.btnPercepciones_Click_1);
+            this.btnCAJEROS.Location = new System.Drawing.Point(12, 70);
+            this.btnCAJEROS.Name = "btnCAJEROS";
+            this.btnCAJEROS.Size = new System.Drawing.Size(229, 66);
+            this.btnCAJEROS.TabIndex = 1;
+            this.btnCAJEROS.Text = "Gestion Cajeros";
+            this.btnCAJEROS.UseVisualStyleBackColor = true;
+            this.btnCAJEROS.Click += new System.EventHandler(this.btnCAJEROS_Click);
             // 
-            // btnNomina
+            // btnProductos
             // 
-            this.btnNomina.Location = new System.Drawing.Point(541, 70);
-            this.btnNomina.Name = "btnNomina";
-            this.btnNomina.Size = new System.Drawing.Size(242, 66);
-            this.btnNomina.TabIndex = 2;
-            this.btnNomina.Text = "Gestion productos";
-            this.btnNomina.UseVisualStyleBackColor = true;
-            this.btnNomina.Click += new System.EventHandler(this.btnNomina_Click);
+            this.btnProductos.Location = new System.Drawing.Point(541, 70);
+            this.btnProductos.Name = "btnProductos";
+            this.btnProductos.Size = new System.Drawing.Size(242, 66);
+            this.btnProductos.TabIndex = 2;
+            this.btnProductos.Text = "Gestion productos";
+            this.btnProductos.UseVisualStyleBackColor = true;
+            this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
             // 
-            // button1
+            // btnVentas
             // 
-            this.button1.Location = new System.Drawing.Point(12, 161);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(229, 65);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Ventas";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnVentas.Location = new System.Drawing.Point(12, 161);
+            this.btnVentas.Name = "btnVentas";
+            this.btnVentas.Size = new System.Drawing.Size(229, 65);
+            this.btnVentas.TabIndex = 3;
+            this.btnVentas.Text = "Ventas";
+            this.btnVentas.UseVisualStyleBackColor = true;
+            this.btnVentas.Click += new System.EventHandler(this.btnVentas_Click);
             // 
-            // btnRecibos
+            // btnInventario
             // 
-            this.btnRecibos.Location = new System.Drawing.Point(541, 161);
-            this.btnRecibos.Name = "btnRecibos";
-            this.btnRecibos.Size = new System.Drawing.Size(242, 65);
-            this.btnRecibos.TabIndex = 4;
-            this.btnRecibos.Text = "Inventario";
-            this.btnRecibos.UseVisualStyleBackColor = true;
-            this.btnRecibos.Click += new System.EventHandler(this.button2_Click);
+            this.btnInventario.Location = new System.Drawing.Point(541, 161);
+            this.btnInventario.Name = "btnInventario";
+            this.btnInventario.Size = new System.Drawing.Size(242, 65);
+            this.btnInventario.TabIndex = 4;
+            this.btnInventario.Text = "Inventario";
+            this.btnInventario.UseVisualStyleBackColor = true;
+            this.btnInventario.Click += new System.EventHandler(this.btnInventario_Click);
             // 
             // button2
             // 
@@ -125,10 +125,10 @@ namespace AVANCE2
             this.Controls.Add(this.button3);
             this.Controls.Add(this.btnReportes);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.btnRecibos);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnNomina);
-            this.Controls.Add(this.btnPercepciones);
+            this.Controls.Add(this.btnInventario);
+            this.Controls.Add(this.btnVentas);
+            this.Controls.Add(this.btnProductos);
+            this.Controls.Add(this.btnCAJEROS);
             this.Controls.Add(this.lbtitulo);
             this.Name = "formInicio";
             this.Text = "INICIO";
@@ -140,10 +140,10 @@ namespace AVANCE2
 
         #endregion
         private System.Windows.Forms.Label lbtitulo;
-        private System.Windows.Forms.Button btnPercepciones;
-        private System.Windows.Forms.Button btnNomina;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnRecibos;
+        private System.Windows.Forms.Button btnCAJEROS;
+        private System.Windows.Forms.Button btnProductos;
+        private System.Windows.Forms.Button btnVentas;
+        private System.Windows.Forms.Button btnInventario;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnReportes;
         private System.Windows.Forms.Button button3;

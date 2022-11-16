@@ -15,18 +15,19 @@ using static AVANCE2.FUNCIONES;
 namespace AVANCE2
 {
 
-    public partial class formAgregar : Form
+    public partial class formAgregarCajero : Form
     {
         private int n = 0;
-        public formAgregar()
+        public formAgregarCajero()
         {
             InitializeComponent();
+
             //  var perSource = conex.Get_All_per();
             //var dedSource = conex.Get_All_deduc();
 
             //POPULAR DATAGRID CON INFO DE LA TABLA
-           
-            
+
+
             /*foreach (Lists.Empleado empleadito in empSource)
             {
 
@@ -40,10 +41,10 @@ namespace AVANCE2
 
             }*/
 
-           
-            
+
+
         }
-        
+
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -266,6 +267,9 @@ namespace AVANCE2
             }
         }
 
+        private void button1_Click_1(object sender, EventArgs e)
+        {
 
+        }
     }
 }

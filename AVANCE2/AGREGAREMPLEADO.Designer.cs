@@ -1,7 +1,7 @@
 ﻿
 namespace AVANCE2
 {
-    partial class formAgregar
+    partial class formAgregarCajero
     {
         /// <summary>
         /// Required designer variable.
@@ -374,6 +374,7 @@ namespace AVANCE2
             this.button1.TabIndex = 11;
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button4
             // 
@@ -384,7 +385,7 @@ namespace AVANCE2
             this.button4.Text = "Regresar";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // formAgregar
+            // formAgregarCajero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -399,7 +400,7 @@ namespace AVANCE2
             this.Controls.Add(this.tbApellidos);
             this.Controls.Add(this.tbNombre);
             this.Controls.Add(this.groupBox1);
-            this.Name = "formAgregar";
+            this.Name = "formAgregarCajero";
             this.Text = "Gestion de empleados";
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleado)).EndInit();
             this.groupBox1.ResumeLayout(false);

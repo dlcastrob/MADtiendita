@@ -7,25 +7,31 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static AVANCE2.FUNCIONES;
-
-
-
 
 namespace AVANCE2
 {
    
     public partial class formInicio : Form
     {
-        
+        formAgregarCajero NuevoCajero;
+        AGREGAR_PRODUCTO NuevoProducto;
+        VENTA NuevaVenta;
+        INVENTARIO NuevoInventario;
+        REPORTE_DE_VENTAS NuevoReporte;
         //LOGIN NuevoLogin;
         //formEmpleados NuevoEmpleado;
         public formInicio()
         {
-
             InitializeComponent();
+            NuevoCajero = new formAgregarCajero();
+            NuevoProducto = new AGREGAR_PRODUCTO();
+            NuevaVenta = new VENTA();
+            NuevoInventario = new INVENTARIO();
+            NuevoReporte = new REPORTE_DE_VENTAS();
             //NuevoLogin = new LOGIN();
             //NuevoEmpleado = new formEmpleados();
         }
@@ -40,10 +46,7 @@ namespace AVANCE2
             //NuevaDeduccion.ShowDialog();
         }
 
-        private void btnPercepciones_Click_1(object sender, EventArgs e)
-        {
-            
-        }
+      
 
         private void btnEmpleados_Click(object sender, EventArgs e)
         {
@@ -63,21 +66,6 @@ namespace AVANCE2
         private void btnCambiar_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void btnNomina_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void button2_Click(object sender, EventArgs e) //RECIBO ESTA JSJSJA
-        {
-            
         }
 
         private void button2_Click_1(object sender, EventArgs e)
@@ -117,14 +105,35 @@ namespace AVANCE2
 
         }
 
-        private void btnReportes_Click(object sender, EventArgs e)
-        {
-            
-        }
+        
 
         private void button3_Click_1(object sender, EventArgs e)
         {
             
+        }
+
+        private void btnCAJEROS_Click(object sender, EventArgs e)
+        {
+            NuevoCajero.ShowDialog();
+        }
+
+        private void btnProductos_Click(object sender, EventArgs e)
+        {
+            NuevoProducto.ShowDialog();        }
+
+        private void btnVentas_Click(object sender, EventArgs e)
+        {
+            NuevaVenta.ShowDialog();
+        }
+
+        private void btnInventario_Click(object sender, EventArgs e)
+        {
+            NuevoInventario.ShowDialog();
+        }
+
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            NuevoReporte.ShowDialog();
         }
     }
        

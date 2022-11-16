@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -20,7 +22,6 @@ namespace AVANCE2
             InitializeComponent();
             NuevoInicio = new formInicio();
         }
-        //SE QUEDA COMO NULO A LA VERGA NO SE PORQUE A LA VERGA ME CAGA A LA VERGA AAAAAAAAAAAAAAAA
         //string usuario = tbUsuario;
         
         public void btnLogin_Click(object sender, EventArgs e)
