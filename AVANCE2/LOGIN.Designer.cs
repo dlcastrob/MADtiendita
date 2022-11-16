@@ -54,7 +54,7 @@ namespace AVANCE2
             this.label1.Location = new System.Drawing.Point(160, 100);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 17);
-            this.label1.TabIndex = 1;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Usuario";
             // 
             // label2
@@ -63,7 +63,7 @@ namespace AVANCE2
             this.label2.Location = new System.Drawing.Point(160, 186);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 17);
-            this.label2.TabIndex = 2;
+            this.label2.TabIndex = 0;
             this.label2.Text = "Contraseña";
             // 
             // tbUsuario
@@ -71,7 +71,7 @@ namespace AVANCE2
             this.tbUsuario.Location = new System.Drawing.Point(163, 131);
             this.tbUsuario.Name = "tbUsuario";
             this.tbUsuario.Size = new System.Drawing.Size(160, 22);
-            this.tbUsuario.TabIndex = 3;
+            this.tbUsuario.TabIndex = 2;
             // 
             // tbContra
             // 
@@ -79,7 +79,7 @@ namespace AVANCE2
             this.tbContra.Name = "tbContra";
             this.tbContra.PasswordChar = '*';
             this.tbContra.Size = new System.Drawing.Size(160, 22);
-            this.tbContra.TabIndex = 4;
+            this.tbContra.TabIndex = 3;
             // 
             // label3
             // 
@@ -87,7 +87,7 @@ namespace AVANCE2
             this.label3.Location = new System.Drawing.Point(160, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(107, 17);
-            this.label3.TabIndex = 5;
+            this.label3.TabIndex = 0;
             this.label3.Text = "Tipo de usuario";
             // 
             // cbTUsuario
@@ -100,7 +100,7 @@ namespace AVANCE2
             this.cbTUsuario.Location = new System.Drawing.Point(163, 39);
             this.cbTUsuario.Name = "cbTUsuario";
             this.cbTUsuario.Size = new System.Drawing.Size(160, 24);
-            this.cbTUsuario.TabIndex = 6;
+            this.cbTUsuario.TabIndex = 1;
             // 
             // LOGIN
             // 

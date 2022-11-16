@@ -46,7 +46,7 @@ namespace AVANCE2
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(669, 337);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.TabIndex = 3;
             // 
             // label7
             // 
@@ -54,7 +54,7 @@ namespace AVANCE2
             this.label7.Location = new System.Drawing.Point(12, 36);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(39, 17);
-            this.label7.TabIndex = 57;
+            this.label7.TabIndex = 0;
             this.label7.Text = "Filtro";
             // 
             // comboBox1
@@ -63,14 +63,14 @@ namespace AVANCE2
             this.comboBox1.Location = new System.Drawing.Point(66, 29);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 58;
+            this.comboBox1.TabIndex = 1;
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(703, 432);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(115, 44);
-            this.button1.TabIndex = 59;
+            this.button1.TabIndex = 4;
             this.button1.Text = "Regresar";
             this.button1.UseVisualStyleBackColor = true;
             // 
@@ -79,7 +79,7 @@ namespace AVANCE2
             this.dateTimePicker1.Location = new System.Drawing.Point(445, 31);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker1.TabIndex = 60;
+            this.dateTimePicker1.TabIndex = 2;
             // 
             // label1
             // 
@@ -87,7 +87,7 @@ namespace AVANCE2
             this.label1.Location = new System.Drawing.Point(333, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 17);
-            this.label1.TabIndex = 61;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Fecha de venta";
             // 
             // REPORTE_DE_VENTAS

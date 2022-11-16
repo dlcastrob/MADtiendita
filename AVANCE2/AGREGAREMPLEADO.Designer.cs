@@ -83,7 +83,7 @@ namespace AVANCE2
             this.label4.Location = new System.Drawing.Point(6, 151);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(144, 17);
-            this.label4.TabIndex = 3;
+            this.label4.TabIndex = 0;
             this.label4.Text = "Numero de empleado";
             // 
             // label5
@@ -92,7 +92,7 @@ namespace AVANCE2
             this.label5.Location = new System.Drawing.Point(9, 96);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(65, 17);
-            this.label5.TabIndex = 4;
+            this.label5.TabIndex = 0;
             this.label5.Text = "Apellidos";
             // 
             // tbNombre
@@ -123,7 +123,7 @@ namespace AVANCE2
             this.label2.Location = new System.Drawing.Point(298, 445);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(169, 17);
-            this.label2.TabIndex = 9;
+            this.label2.TabIndex = 0;
             this.label2.Text = "BIENVENIDO AL EQUIPO";
             // 
             // btnSave
@@ -142,7 +142,7 @@ namespace AVANCE2
             this.label7.Location = new System.Drawing.Point(373, 46);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(139, 17);
-            this.label7.TabIndex = 12;
+            this.label7.TabIndex = 0;
             this.label7.Text = "Fecha de nacimiento";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
@@ -151,14 +151,14 @@ namespace AVANCE2
             this.tbCalle.Location = new System.Drawing.Point(154, 199);
             this.tbCalle.Name = "tbCalle";
             this.tbCalle.Size = new System.Drawing.Size(195, 22);
-            this.tbCalle.TabIndex = 11;
+            this.tbCalle.TabIndex = 7;
             // 
             // tbCURP
             // 
             this.tbCURP.Location = new System.Drawing.Point(516, 150);
             this.tbCURP.Name = "tbCURP";
             this.tbCURP.Size = new System.Drawing.Size(195, 22);
-            this.tbCURP.TabIndex = 9;
+            this.tbCURP.TabIndex = 6;
             // 
             // label10
             // 
@@ -166,7 +166,7 @@ namespace AVANCE2
             this.label10.Location = new System.Drawing.Point(0, 199);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(128, 17);
-            this.label10.TabIndex = 21;
+            this.label10.TabIndex = 0;
             this.label10.Text = "Numero de nomina";
             // 
             // label11
@@ -175,7 +175,7 @@ namespace AVANCE2
             this.label11.Location = new System.Drawing.Point(372, 153);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(46, 17);
-            this.label11.TabIndex = 20;
+            this.label11.TabIndex = 0;
             this.label11.Text = "CURP";
             // 
             // tbCuenta
@@ -183,7 +183,7 @@ namespace AVANCE2
             this.tbCuenta.Location = new System.Drawing.Point(154, 249);
             this.tbCuenta.Name = "tbCuenta";
             this.tbCuenta.Size = new System.Drawing.Size(195, 22);
-            this.tbCuenta.TabIndex = 19;
+            this.tbCuenta.TabIndex = 9;
             // 
             // label12
             // 
@@ -191,7 +191,7 @@ namespace AVANCE2
             this.label12.Location = new System.Drawing.Point(9, 249);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(125, 17);
-            this.label12.TabIndex = 25;
+            this.label12.TabIndex = 0;
             this.label12.Text = "Numero de cuenta";
             // 
             // label15
@@ -200,7 +200,7 @@ namespace AVANCE2
             this.label15.Location = new System.Drawing.Point(373, 103);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(42, 17);
-            this.label15.TabIndex = 28;
+            this.label15.TabIndex = 0;
             this.label15.Text = "Email";
             // 
             // DTPNacimiento
@@ -208,7 +208,7 @@ namespace AVANCE2
             this.DTPNacimiento.Location = new System.Drawing.Point(516, 43);
             this.DTPNacimiento.Name = "DTPNacimiento";
             this.DTPNacimiento.Size = new System.Drawing.Size(195, 22);
-            this.DTPNacimiento.TabIndex = 6;
+            this.DTPNacimiento.TabIndex = 2;
             // 
             // contextMenuStrip1
             // 
@@ -221,7 +221,7 @@ namespace AVANCE2
             this.DTPAlta.Location = new System.Drawing.Point(516, 199);
             this.DTPAlta.Name = "DTPAlta";
             this.DTPAlta.Size = new System.Drawing.Size(195, 22);
-            this.DTPAlta.TabIndex = 20;
+            this.DTPAlta.TabIndex = 8;
             // 
             // label21
             // 
@@ -229,7 +229,7 @@ namespace AVANCE2
             this.label21.Location = new System.Drawing.Point(373, 204);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(94, 17);
-            this.label21.TabIndex = 47;
+            this.label21.TabIndex = 0;
             this.label21.Text = "Fecha de alta";
             // 
             // tbEmail
@@ -237,7 +237,7 @@ namespace AVANCE2
             this.tbEmail.Location = new System.Drawing.Point(516, 100);
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.Size = new System.Drawing.Size(195, 22);
-            this.tbEmail.TabIndex = 10;
+            this.tbEmail.TabIndex = 4;
             // 
             // dgvEmpleado
             // 
@@ -254,7 +254,7 @@ namespace AVANCE2
             this.dgvEmpleado.RowTemplate.Height = 24;
             this.dgvEmpleado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvEmpleado.Size = new System.Drawing.Size(554, 289);
-            this.dgvEmpleado.TabIndex = 49;
+            this.dgvEmpleado.TabIndex = 12;
             this.dgvEmpleado.TabStop = false;
             this.dgvEmpleado.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmpleado_CellClick);
             this.dgvEmpleado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -296,7 +296,7 @@ namespace AVANCE2
             this.button2.Location = new System.Drawing.Point(801, 399);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(79, 27);
-            this.button2.TabIndex = 50;
+            this.button2.TabIndex = 13;
             this.button2.TabStop = false;
             this.button2.Text = "Editar";
             this.button2.UseVisualStyleBackColor = true;
@@ -307,7 +307,7 @@ namespace AVANCE2
             this.button3.Location = new System.Drawing.Point(902, 399);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(79, 27);
-            this.button3.TabIndex = 51;
+            this.button3.TabIndex = 14;
             this.button3.Text = "Eliminar";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -336,7 +336,7 @@ namespace AVANCE2
             this.groupBox1.Location = new System.Drawing.Point(12, 50);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(754, 335);
-            this.groupBox1.TabIndex = 52;
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Registro de datos del cajero";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
@@ -347,7 +347,7 @@ namespace AVANCE2
             this.label23.Location = new System.Drawing.Point(374, 249);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(81, 17);
-            this.label23.TabIndex = 55;
+            this.label23.TabIndex = 0;
             this.label23.Text = "Contraseña";
             // 
             // tbcontra
@@ -355,7 +355,7 @@ namespace AVANCE2
             this.tbcontra.Location = new System.Drawing.Point(516, 249);
             this.tbcontra.Name = "tbcontra";
             this.tbcontra.Size = new System.Drawing.Size(195, 22);
-            this.tbcontra.TabIndex = 21;
+            this.tbcontra.TabIndex = 10;
             // 
             // label22
             // 
@@ -363,7 +363,7 @@ namespace AVANCE2
             this.label22.Location = new System.Drawing.Point(798, 50);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(183, 17);
-            this.label22.TabIndex = 53;
+            this.label22.TabIndex = 0;
             this.label22.Text = "Lista de cajeros registrados";
             // 
             // button1
@@ -371,7 +371,7 @@ namespace AVANCE2
             this.button1.Location = new System.Drawing.Point(343, 416);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 26);
-            this.button1.TabIndex = 54;
+            this.button1.TabIndex = 11;
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = true;
             // 
@@ -380,7 +380,7 @@ namespace AVANCE2
             this.button4.Location = new System.Drawing.Point(1240, 407);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(115, 44);
-            this.button4.TabIndex = 55;
+            this.button4.TabIndex = 15;
             this.button4.Text = "Regresar";
             this.button4.UseVisualStyleBackColor = true;
             // 

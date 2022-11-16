@@ -45,7 +45,7 @@ namespace AVANCE2
             this.lbtitulo.Location = new System.Drawing.Point(301, 9);
             this.lbtitulo.Name = "lbtitulo";
             this.lbtitulo.Size = new System.Drawing.Size(203, 17);
-            this.lbtitulo.TabIndex = 1;
+            this.lbtitulo.TabIndex = 0;
             this.lbtitulo.Text = "Bienvenido! Que desea hacer?";
             // 
             // btnPercepciones
@@ -93,7 +93,7 @@ namespace AVANCE2
             this.button2.Location = new System.Drawing.Point(669, 403);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(114, 35);
-            this.button2.TabIndex = 5;
+            this.button2.TabIndex = 7;
             this.button2.Text = "Salir y Guardar";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
@@ -103,7 +103,7 @@ namespace AVANCE2
             this.btnReportes.Location = new System.Drawing.Point(12, 248);
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Size = new System.Drawing.Size(229, 66);
-            this.btnReportes.TabIndex = 6;
+            this.btnReportes.TabIndex = 5;
             this.btnReportes.Text = "Consultar recibos";
             this.btnReportes.UseVisualStyleBackColor = true;
             this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
@@ -113,7 +113,7 @@ namespace AVANCE2
             this.button3.Location = new System.Drawing.Point(541, 248);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(242, 66);
-            this.button3.TabIndex = 7;
+            this.button3.TabIndex = 6;
             this.button3.Text = "Reporte por cajero";
             this.button3.UseVisualStyleBackColor = true;
             // 
