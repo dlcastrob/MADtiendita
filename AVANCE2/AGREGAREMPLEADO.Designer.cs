@@ -52,10 +52,6 @@ namespace AVANCE2
             this.label21 = new System.Windows.Forms.Label();
             this.tbEmail = new System.Windows.Forms.TextBox();
             this.dgvEmpleado = new System.Windows.Forms.DataGridView();
-            this.numemp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomEmp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.depa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CURP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -64,6 +60,13 @@ namespace AVANCE2
             this.label22 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.numemp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomEmp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CURP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nacimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nomina = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Correo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaEntrada = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleado)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -245,8 +248,11 @@ namespace AVANCE2
             this.dgvEmpleado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.numemp,
             this.nomEmp,
-            this.depa,
-            this.CURP});
+            this.CURP,
+            this.Nacimiento,
+            this.Nomina,
+            this.Correo,
+            this.FechaEntrada});
             this.dgvEmpleado.Location = new System.Drawing.Point(801, 96);
             this.dgvEmpleado.Name = "dgvEmpleado";
             this.dgvEmpleado.ReadOnly = true;
@@ -258,38 +264,6 @@ namespace AVANCE2
             this.dgvEmpleado.TabStop = false;
             this.dgvEmpleado.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmpleado_CellClick);
             this.dgvEmpleado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // numemp
-            // 
-            this.numemp.HeaderText = "Num. Empleado";
-            this.numemp.MinimumWidth = 6;
-            this.numemp.Name = "numemp";
-            this.numemp.ReadOnly = true;
-            this.numemp.Width = 125;
-            // 
-            // nomEmp
-            // 
-            this.nomEmp.HeaderText = "Nombre Empleado";
-            this.nomEmp.MinimumWidth = 6;
-            this.nomEmp.Name = "nomEmp";
-            this.nomEmp.ReadOnly = true;
-            this.nomEmp.Width = 125;
-            // 
-            // depa
-            // 
-            this.depa.HeaderText = "departamento";
-            this.depa.MinimumWidth = 6;
-            this.depa.Name = "depa";
-            this.depa.ReadOnly = true;
-            this.depa.Width = 125;
-            // 
-            // CURP
-            // 
-            this.CURP.HeaderText = "CURP";
-            this.CURP.MinimumWidth = 6;
-            this.CURP.Name = "CURP";
-            this.CURP.ReadOnly = true;
-            this.CURP.Width = 125;
             // 
             // button2
             // 
@@ -384,6 +358,63 @@ namespace AVANCE2
             this.button4.TabIndex = 15;
             this.button4.Text = "Regresar";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // numemp
+            // 
+            this.numemp.HeaderText = "Num. Empleado";
+            this.numemp.MinimumWidth = 6;
+            this.numemp.Name = "numemp";
+            this.numemp.ReadOnly = true;
+            this.numemp.Width = 125;
+            // 
+            // nomEmp
+            // 
+            this.nomEmp.HeaderText = "Nombre Empleado";
+            this.nomEmp.MinimumWidth = 6;
+            this.nomEmp.Name = "nomEmp";
+            this.nomEmp.ReadOnly = true;
+            this.nomEmp.Width = 125;
+            // 
+            // CURP
+            // 
+            this.CURP.HeaderText = "CURP";
+            this.CURP.MinimumWidth = 6;
+            this.CURP.Name = "CURP";
+            this.CURP.ReadOnly = true;
+            this.CURP.Width = 125;
+            // 
+            // Nacimiento
+            // 
+            this.Nacimiento.HeaderText = "Nacimiento";
+            this.Nacimiento.MinimumWidth = 6;
+            this.Nacimiento.Name = "Nacimiento";
+            this.Nacimiento.ReadOnly = true;
+            this.Nacimiento.Width = 125;
+            // 
+            // Nomina
+            // 
+            this.Nomina.HeaderText = "Nomina";
+            this.Nomina.MinimumWidth = 6;
+            this.Nomina.Name = "Nomina";
+            this.Nomina.ReadOnly = true;
+            this.Nomina.Width = 125;
+            // 
+            // Correo
+            // 
+            this.Correo.HeaderText = "Correo";
+            this.Correo.MinimumWidth = 6;
+            this.Correo.Name = "Correo";
+            this.Correo.ReadOnly = true;
+            this.Correo.Width = 125;
+            // 
+            // FechaEntrada
+            // 
+            this.FechaEntrada.HeaderText = "Fecha de entrada";
+            this.FechaEntrada.MinimumWidth = 6;
+            this.FechaEntrada.Name = "FechaEntrada";
+            this.FechaEntrada.ReadOnly = true;
+            this.FechaEntrada.Width = 125;
             // 
             // formAgregarCajero
             // 
@@ -440,11 +471,14 @@ namespace AVANCE2
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.TextBox tbcontra;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numemp;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nomEmp;
-        private System.Windows.Forms.DataGridViewTextBoxColumn depa;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CURP;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numemp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomEmp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CURP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nacimiento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nomina;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Correo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FechaEntrada;
     }
 }
