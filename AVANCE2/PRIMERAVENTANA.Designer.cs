@@ -42,9 +42,11 @@ namespace AVANCE2
             // lbtitulo
             // 
             this.lbtitulo.AutoSize = true;
-            this.lbtitulo.Location = new System.Drawing.Point(301, 9);
+            this.lbtitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbtitulo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbtitulo.Location = new System.Drawing.Point(248, 18);
             this.lbtitulo.Name = "lbtitulo";
-            this.lbtitulo.Size = new System.Drawing.Size(203, 17);
+            this.lbtitulo.Size = new System.Drawing.Size(282, 25);
             this.lbtitulo.TabIndex = 0;
             this.lbtitulo.Text = "Bienvenido! Que desea hacer?";
             // 
@@ -121,6 +123,8 @@ namespace AVANCE2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(795, 450);
             this.Controls.Add(this.btnReporteCajero);
             this.Controls.Add(this.btnReportes);
@@ -130,6 +134,7 @@ namespace AVANCE2
             this.Controls.Add(this.btnProductos);
             this.Controls.Add(this.btnCAJEROS);
             this.Controls.Add(this.lbtitulo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "formInicio";
             this.Text = "INICIO";
             this.Load += new System.EventHandler(this.formInicio_Load);
