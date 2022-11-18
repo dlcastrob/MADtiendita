@@ -46,74 +46,74 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AGREGAREMPLEADO.cs">
+    <Compile Include="Ventanas\AGREGAREMPLEADO.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AGREGAREMPLEADO.designer.cs">
+    <Compile Include="Ventanas\AGREGAREMPLEADO.designer.cs">
       <DependentUpon>AGREGAREMPLEADO.cs</DependentUpon>
     </Compile>
-    <Compile Include="AGREGAR_PRODUCTO.cs">
+    <Compile Include="Ventanas\AGREGAR_PRODUCTO.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AGREGAR_PRODUCTO.Designer.cs">
+    <Compile Include="Ventanas\AGREGAR_PRODUCTO.Designer.cs">
       <DependentUpon>AGREGAR_PRODUCTO.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Ventanas\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Ventanas\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="FUNCIONES.cs" />
-    <Compile Include="INVENTARIO.cs">
+    <Compile Include="Ventanas\INVENTARIO.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="INVENTARIO.Designer.cs">
+    <Compile Include="Ventanas\INVENTARIO.Designer.cs">
       <DependentUpon>INVENTARIO.cs</DependentUpon>
     </Compile>
     <Compile Include="Lists.cs" />
-    <Compile Include="LOGIN.cs">
+    <Compile Include="Ventanas\LOGIN.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LOGIN.Designer.cs">
+    <Compile Include="Ventanas\LOGIN.Designer.cs">
       <DependentUpon>LOGIN.cs</DependentUpon>
     </Compile>
-    <Compile Include="PRIMERAVENTANA.cs">
+    <Compile Include="Ventanas\PRIMERAVENTANA.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PRIMERAVENTANA.designer.cs">
+    <Compile Include="Ventanas\PRIMERAVENTANA.designer.cs">
       <DependentUpon>PRIMERAVENTANA.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="REPORTE_DE_VENTAS.cs">
+    <Compile Include="Ventanas\REPORTE_DE_VENTAS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="REPORTE_DE_VENTAS.Designer.cs">
+    <Compile Include="Ventanas\REPORTE_DE_VENTAS.Designer.cs">
       <DependentUpon>REPORTE_DE_VENTAS.cs</DependentUpon>
     </Compile>
-    <Compile Include="VENTA.cs">
+    <Compile Include="Ventanas\VENTA.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VENTA.Designer.cs">
+    <Compile Include="Ventanas\VENTA.Designer.cs">
       <DependentUpon>VENTA.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AGREGAREMPLEADO.resx">
+    <EmbeddedResource Include="Ventanas\AGREGAREMPLEADO.resx">
       <DependentUpon>AGREGAREMPLEADO.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AGREGAR_PRODUCTO.resx">
+    <EmbeddedResource Include="Ventanas\AGREGAR_PRODUCTO.resx">
       <DependentUpon>AGREGAR_PRODUCTO.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="Ventanas\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="INVENTARIO.resx">
+    <EmbeddedResource Include="Ventanas\INVENTARIO.resx">
       <DependentUpon>INVENTARIO.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LOGIN.resx">
+    <EmbeddedResource Include="Ventanas\LOGIN.resx">
       <DependentUpon>LOGIN.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PRIMERAVENTANA.resx">
+    <EmbeddedResource Include="Ventanas\PRIMERAVENTANA.resx">
       <DependentUpon>PRIMERAVENTANA.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -125,10 +125,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="REPORTE_DE_VENTAS.resx">
+    <EmbeddedResource Include="Ventanas\REPORTE_DE_VENTAS.resx">
       <DependentUpon>REPORTE_DE_VENTAS.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="VENTA.resx">
+    <EmbeddedResource Include="Ventanas\VENTA.resx">
       <DependentUpon>VENTA.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
