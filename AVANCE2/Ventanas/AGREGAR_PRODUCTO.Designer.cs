@@ -35,18 +35,13 @@ namespace AVANCE2
             this.label15 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.tbDesc = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,6 +56,11 @@ namespace AVANCE2
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -116,20 +116,6 @@ namespace AVANCE2
             this.tbDesc.Size = new System.Drawing.Size(155, 22);
             this.tbDesc.TabIndex = 1;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(166, 206);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(154, 22);
-            this.textBox1.TabIndex = 7;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(166, 252);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(154, 22);
-            this.textBox2.TabIndex = 9;
-            // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
@@ -141,10 +127,16 @@ namespace AVANCE2
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Kilo",
+            "Gramos",
+            "Litro",
+            "Metro"});
             this.comboBox2.Location = new System.Drawing.Point(167, 153);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(154, 24);
             this.comboBox2.TabIndex = 5;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -180,20 +172,6 @@ namespace AVANCE2
             this.dateTimePicker1.Size = new System.Drawing.Size(154, 22);
             this.dateTimePicker1.TabIndex = 2;
             // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(516, 153);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(154, 22);
-            this.textBox3.TabIndex = 6;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(516, 107);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(154, 22);
-            this.textBox4.TabIndex = 4;
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(411, 286);
@@ -202,18 +180,6 @@ namespace AVANCE2
             this.button1.TabIndex = 10;
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "10%",
-            "20%",
-            "50%"});
-            this.comboBox3.Location = new System.Drawing.Point(516, 206);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(154, 24);
-            this.comboBox3.TabIndex = 8;
             // 
             // label4
             // 
@@ -335,28 +301,80 @@ namespace AVANCE2
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.maskedTextBox1.Location = new System.Drawing.Point(515, 204);
+            this.maskedTextBox1.Mask = "99999";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(155, 22);
+            this.maskedTextBox1.TabIndex = 15;
+            this.maskedTextBox1.ValidatingType = typeof(int);
+            this.maskedTextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
+            // 
+            // maskedTextBox2
+            // 
+            this.maskedTextBox2.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.maskedTextBox2.Location = new System.Drawing.Point(515, 102);
+            this.maskedTextBox2.Mask = "99999";
+            this.maskedTextBox2.Name = "maskedTextBox2";
+            this.maskedTextBox2.Size = new System.Drawing.Size(155, 22);
+            this.maskedTextBox2.TabIndex = 16;
+            this.maskedTextBox2.ValidatingType = typeof(int);
+            // 
+            // maskedTextBox3
+            // 
+            this.maskedTextBox3.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.maskedTextBox3.Location = new System.Drawing.Point(514, 156);
+            this.maskedTextBox3.Mask = "99999";
+            this.maskedTextBox3.Name = "maskedTextBox3";
+            this.maskedTextBox3.Size = new System.Drawing.Size(155, 22);
+            this.maskedTextBox3.TabIndex = 17;
+            this.maskedTextBox3.ValidatingType = typeof(int);
+            // 
+            // maskedTextBox4
+            // 
+            this.maskedTextBox4.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.maskedTextBox4.Location = new System.Drawing.Point(165, 204);
+            this.maskedTextBox4.Mask = "99999";
+            this.maskedTextBox4.Name = "maskedTextBox4";
+            this.maskedTextBox4.Size = new System.Drawing.Size(155, 22);
+            this.maskedTextBox4.TabIndex = 18;
+            this.maskedTextBox4.ValidatingType = typeof(int);
+            this.maskedTextBox4.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox4_MaskInputRejected);
+            // 
+            // maskedTextBox5
+            // 
+            this.maskedTextBox5.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.maskedTextBox5.Location = new System.Drawing.Point(167, 252);
+            this.maskedTextBox5.Mask = "99999";
+            this.maskedTextBox5.Name = "maskedTextBox5";
+            this.maskedTextBox5.Size = new System.Drawing.Size(155, 22);
+            this.maskedTextBox5.TabIndex = 19;
+            this.maskedTextBox5.ValidatingType = typeof(int);
+            // 
             // AGREGAR_PRODUCTO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1440, 450);
+            this.Controls.Add(this.maskedTextBox5);
+            this.Controls.Add(this.maskedTextBox4);
+            this.Controls.Add(this.maskedTextBox3);
+            this.Controls.Add(this.maskedTextBox2);
+            this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.tbDesc);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label11);
@@ -379,18 +397,13 @@ namespace AVANCE2
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox tbDesc;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button3;
@@ -405,5 +418,10 @@ namespace AVANCE2
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha_Alta;
         private System.Windows.Forms.DataGridViewTextBoxColumn Existencia;
         private System.Windows.Forms.DataGridViewTextBoxColumn Reorden;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox4;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox5;
     }
 }

@@ -166,11 +166,6 @@ namespace AVANCE2
 
         }
 
-        private void maskedTextBox4_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
-
         private void maskedTextBox5_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
 

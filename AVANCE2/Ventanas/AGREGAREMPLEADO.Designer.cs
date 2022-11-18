@@ -34,16 +34,12 @@ namespace AVANCE2
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.tbNombre = new System.Windows.Forms.TextBox();
-            this.tbID = new System.Windows.Forms.TextBox();
             this.tbApellidos = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.tbCalle = new System.Windows.Forms.TextBox();
-            this.tbCURP = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.tbCuenta = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.DTPNacimiento = new System.Windows.Forms.DateTimePicker();
@@ -52,6 +48,13 @@ namespace AVANCE2
             this.label21 = new System.Windows.Forms.Label();
             this.tbEmail = new System.Windows.Forms.TextBox();
             this.dgvEmpleado = new System.Windows.Forms.DataGridView();
+            this.numemp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomEmp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CURP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nacimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nomina = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Correo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaEntrada = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -60,13 +63,10 @@ namespace AVANCE2
             this.label22 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.numemp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomEmp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CURP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nacimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nomina = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Correo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FechaEntrada = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleado)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -105,14 +105,6 @@ namespace AVANCE2
             this.tbNombre.Size = new System.Drawing.Size(195, 22);
             this.tbNombre.TabIndex = 1;
             // 
-            // tbID
-            // 
-            this.tbID.Enabled = false;
-            this.tbID.Location = new System.Drawing.Point(154, 148);
-            this.tbID.Name = "tbID";
-            this.tbID.Size = new System.Drawing.Size(195, 22);
-            this.tbID.TabIndex = 5;
-            // 
             // tbApellidos
             // 
             this.tbApellidos.Location = new System.Drawing.Point(166, 146);
@@ -149,20 +141,6 @@ namespace AVANCE2
             this.label7.Text = "Fecha de nacimiento";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // tbCalle
-            // 
-            this.tbCalle.Location = new System.Drawing.Point(154, 199);
-            this.tbCalle.Name = "tbCalle";
-            this.tbCalle.Size = new System.Drawing.Size(195, 22);
-            this.tbCalle.TabIndex = 7;
-            // 
-            // tbCURP
-            // 
-            this.tbCURP.Location = new System.Drawing.Point(516, 150);
-            this.tbCURP.Name = "tbCURP";
-            this.tbCURP.Size = new System.Drawing.Size(195, 22);
-            this.tbCURP.TabIndex = 6;
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -180,13 +158,6 @@ namespace AVANCE2
             this.label11.Size = new System.Drawing.Size(46, 17);
             this.label11.TabIndex = 0;
             this.label11.Text = "CURP";
-            // 
-            // tbCuenta
-            // 
-            this.tbCuenta.Location = new System.Drawing.Point(154, 249);
-            this.tbCuenta.Name = "tbCuenta";
-            this.tbCuenta.Size = new System.Drawing.Size(195, 22);
-            this.tbCuenta.TabIndex = 9;
             // 
             // label12
             // 
@@ -265,101 +236,6 @@ namespace AVANCE2
             this.dgvEmpleado.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmpleado_CellClick);
             this.dgvEmpleado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(801, 399);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(79, 27);
-            this.button2.TabIndex = 13;
-            this.button2.TabStop = false;
-            this.button2.Text = "Editar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(902, 399);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(79, 27);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "Eliminar";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.label23);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.tbcontra);
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.tbEmail);
-            this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.DTPAlta);
-            this.groupBox1.Controls.Add(this.label21);
-            this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.tbCuenta);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.tbCalle);
-            this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Controls.Add(this.tbCURP);
-            this.groupBox1.Controls.Add(this.DTPNacimiento);
-            this.groupBox1.Controls.Add(this.tbID);
-            this.groupBox1.Controls.Add(this.btnSave);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Location = new System.Drawing.Point(12, 50);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(754, 335);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Registro de datos del cajero";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(374, 249);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(81, 17);
-            this.label23.TabIndex = 0;
-            this.label23.Text = "Contraseña";
-            // 
-            // tbcontra
-            // 
-            this.tbcontra.Location = new System.Drawing.Point(516, 249);
-            this.tbcontra.Name = "tbcontra";
-            this.tbcontra.Size = new System.Drawing.Size(195, 22);
-            this.tbcontra.TabIndex = 10;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(798, 50);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(183, 17);
-            this.label22.TabIndex = 0;
-            this.label22.Text = "Lista de cajeros registrados";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(343, 416);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 26);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(1240, 407);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(115, 44);
-            this.button4.TabIndex = 15;
-            this.button4.Text = "Regresar";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
             // numemp
             // 
             this.numemp.HeaderText = "Num. Empleado";
@@ -416,6 +292,140 @@ namespace AVANCE2
             this.FechaEntrada.ReadOnly = true;
             this.FechaEntrada.Width = 125;
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(801, 399);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(79, 27);
+            this.button2.TabIndex = 13;
+            this.button2.TabStop = false;
+            this.button2.Text = "Editar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(902, 399);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(79, 27);
+            this.button3.TabIndex = 14;
+            this.button3.Text = "Eliminar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.maskedTextBox3);
+            this.groupBox1.Controls.Add(this.maskedTextBox2);
+            this.groupBox1.Controls.Add(this.maskedTextBox1);
+            this.groupBox1.Controls.Add(this.maskedTextBox4);
+            this.groupBox1.Controls.Add(this.label23);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.tbcontra);
+            this.groupBox1.Controls.Add(this.label10);
+            this.groupBox1.Controls.Add(this.tbEmail);
+            this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Controls.Add(this.DTPAlta);
+            this.groupBox1.Controls.Add(this.label21);
+            this.groupBox1.Controls.Add(this.label12);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label15);
+            this.groupBox1.Controls.Add(this.DTPNacimiento);
+            this.groupBox1.Controls.Add(this.btnSave);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Location = new System.Drawing.Point(12, 50);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(754, 335);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Registro de datos del cajero";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(374, 249);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(81, 17);
+            this.label23.TabIndex = 0;
+            this.label23.Text = "Contraseña";
+            // 
+            // tbcontra
+            // 
+            this.tbcontra.Location = new System.Drawing.Point(516, 249);
+            this.tbcontra.Name = "tbcontra";
+            this.tbcontra.Size = new System.Drawing.Size(195, 22);
+            this.tbcontra.TabIndex = 10;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(798, 50);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(183, 17);
+            this.label22.TabIndex = 0;
+            this.label22.Text = "Lista de cajeros registrados";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(343, 416);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 26);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Agregar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(1240, 407);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(115, 44);
+            this.button4.TabIndex = 15;
+            this.button4.Text = "Regresar";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // maskedTextBox4
+            // 
+            this.maskedTextBox4.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.maskedTextBox4.Location = new System.Drawing.Point(154, 204);
+            this.maskedTextBox4.Mask = "99999";
+            this.maskedTextBox4.Name = "maskedTextBox4";
+            this.maskedTextBox4.Size = new System.Drawing.Size(195, 22);
+            this.maskedTextBox4.TabIndex = 7;
+            this.maskedTextBox4.ValidatingType = typeof(int);
+            // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.maskedTextBox1.Location = new System.Drawing.Point(154, 244);
+            this.maskedTextBox1.Mask = "99999";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(195, 22);
+            this.maskedTextBox1.TabIndex = 9;
+            this.maskedTextBox1.ValidatingType = typeof(int);
+            // 
+            // maskedTextBox2
+            // 
+            this.maskedTextBox2.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.maskedTextBox2.Location = new System.Drawing.Point(516, 153);
+            this.maskedTextBox2.Mask = "AAAA-999999-AAAA-AAAA";
+            this.maskedTextBox2.Name = "maskedTextBox2";
+            this.maskedTextBox2.Size = new System.Drawing.Size(195, 22);
+            this.maskedTextBox2.TabIndex = 6;
+            // 
+            // maskedTextBox3
+            // 
+            this.maskedTextBox3.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.maskedTextBox3.Location = new System.Drawing.Point(156, 148);
+            this.maskedTextBox3.Mask = "99999";
+            this.maskedTextBox3.Name = "maskedTextBox3";
+            this.maskedTextBox3.Size = new System.Drawing.Size(195, 22);
+            this.maskedTextBox3.TabIndex = 5;
+            this.maskedTextBox3.ValidatingType = typeof(int);
+            // 
             // formAgregarCajero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -447,16 +457,12 @@ namespace AVANCE2
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tbNombre;
-        private System.Windows.Forms.TextBox tbID;
         private System.Windows.Forms.TextBox tbApellidos;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox tbCalle;
-        private System.Windows.Forms.TextBox tbCURP;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox tbCuenta;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.DateTimePicker DTPNacimiento;
@@ -480,5 +486,9 @@ namespace AVANCE2
         private System.Windows.Forms.DataGridViewTextBoxColumn Nomina;
         private System.Windows.Forms.DataGridViewTextBoxColumn Correo;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaEntrada;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox4;
     }
 }
