@@ -225,7 +225,7 @@ namespace AVANCE2
             this.maskedTextBox1.Mask = "99999";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(155, 22);
-            this.maskedTextBox1.TabIndex = 15;
+            this.maskedTextBox1.TabIndex = 8;
             this.maskedTextBox1.ValidatingType = typeof(int);
             this.maskedTextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             // 
@@ -236,7 +236,7 @@ namespace AVANCE2
             this.maskedTextBox2.Mask = "99999";
             this.maskedTextBox2.Name = "maskedTextBox2";
             this.maskedTextBox2.Size = new System.Drawing.Size(155, 22);
-            this.maskedTextBox2.TabIndex = 16;
+            this.maskedTextBox2.TabIndex = 4;
             this.maskedTextBox2.ValidatingType = typeof(int);
             // 
             // maskedTextBox3
@@ -246,7 +246,7 @@ namespace AVANCE2
             this.maskedTextBox3.Mask = "99999";
             this.maskedTextBox3.Name = "maskedTextBox3";
             this.maskedTextBox3.Size = new System.Drawing.Size(155, 22);
-            this.maskedTextBox3.TabIndex = 17;
+            this.maskedTextBox3.TabIndex = 6;
             this.maskedTextBox3.ValidatingType = typeof(int);
             // 
             // maskedTextBox4
@@ -256,7 +256,7 @@ namespace AVANCE2
             this.maskedTextBox4.Mask = "99999";
             this.maskedTextBox4.Name = "maskedTextBox4";
             this.maskedTextBox4.Size = new System.Drawing.Size(155, 22);
-            this.maskedTextBox4.TabIndex = 18;
+            this.maskedTextBox4.TabIndex = 7;
             this.maskedTextBox4.ValidatingType = typeof(int);
             this.maskedTextBox4.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox4_MaskInputRejected);
             // 
@@ -267,7 +267,7 @@ namespace AVANCE2
             this.maskedTextBox5.Mask = "99999";
             this.maskedTextBox5.Name = "maskedTextBox5";
             this.maskedTextBox5.Size = new System.Drawing.Size(155, 22);
-            this.maskedTextBox5.TabIndex = 19;
+            this.maskedTextBox5.TabIndex = 9;
             this.maskedTextBox5.ValidatingType = typeof(int);
             // 
             // AGREGAR_PRODUCTO
