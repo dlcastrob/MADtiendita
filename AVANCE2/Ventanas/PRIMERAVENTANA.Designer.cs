@@ -36,7 +36,7 @@ namespace AVANCE2
             this.btnInventario = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnReportes = new System.Windows.Forms.Button();
-            this.btnReporteCajero = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbtitulo
@@ -110,14 +110,14 @@ namespace AVANCE2
             this.btnReportes.UseVisualStyleBackColor = true;
             this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
             // 
-            // btnReporteCajero
+            // button3
             // 
-            this.btnReporteCajero.Location = new System.Drawing.Point(541, 248);
-            this.btnReporteCajero.Name = "btnReporteCajero";
-            this.btnReporteCajero.Size = new System.Drawing.Size(242, 66);
-            this.btnReporteCajero.TabIndex = 6;
-            this.btnReporteCajero.Text = "Reporte por cajero";
-            this.btnReporteCajero.UseVisualStyleBackColor = true;
+            this.button3.Location = new System.Drawing.Point(541, 248);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(242, 66);
+            this.button3.TabIndex = 6;
+            this.button3.Text = "Reporte por cajero";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // formInicio
             // 
@@ -126,7 +126,7 @@ namespace AVANCE2
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(795, 450);
-            this.Controls.Add(this.btnReporteCajero);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.btnReportes);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnInventario);
@@ -151,7 +151,7 @@ namespace AVANCE2
         private System.Windows.Forms.Button btnInventario;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnReportes;
-        private System.Windows.Forms.Button btnReporteCajero;
+        private System.Windows.Forms.Button button3;
     }
 }
 

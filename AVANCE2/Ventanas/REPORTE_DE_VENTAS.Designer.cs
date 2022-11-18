@@ -60,10 +60,6 @@ namespace AVANCE2
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "POR CAJA",
-            "POR CAJERO",
-            "POR DEPARTAMENTO"});
             this.comboBox1.Location = new System.Drawing.Point(66, 29);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 24);
@@ -77,7 +73,6 @@ namespace AVANCE2
             this.button1.TabIndex = 4;
             this.button1.Text = "Regresar";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dateTimePicker1
             // 

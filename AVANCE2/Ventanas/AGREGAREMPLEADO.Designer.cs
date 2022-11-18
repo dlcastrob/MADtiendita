@@ -219,11 +219,8 @@ namespace AVANCE2
             this.dgvEmpleado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.numemp,
             this.nomEmp,
-            this.CURP,
-            this.Nacimiento,
-            this.Nomina,
-            this.Correo,
-            this.FechaEntrada});
+            this.depa,
+            this.CURP});
             this.dgvEmpleado.Location = new System.Drawing.Point(801, 96);
             this.dgvEmpleado.Name = "dgvEmpleado";
             this.dgvEmpleado.ReadOnly = true;
@@ -477,10 +474,9 @@ namespace AVANCE2
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.TextBox tbcontra;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.DataGridViewTextBoxColumn numemp;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomEmp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn depa;
         private System.Windows.Forms.DataGridViewTextBoxColumn CURP;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nacimiento;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nomina;
