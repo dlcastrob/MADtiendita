@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace AVANCE2
 {
-    public partial class Form1 : Form
+    public partial class menuEmp : Form
     {
-        public Form1()
+        public menuEmp()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            N
         }
     }
 }
