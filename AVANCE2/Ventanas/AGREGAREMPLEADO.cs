@@ -85,7 +85,7 @@ namespace AVANCE2
                         empleado.nombre = tbNombre.Text;
                         empleado.apellidos = tbApellidos.Text;
                         empleado.fechaAlta = DTPAlta.Text;
-                        empleado.CURP = tbCURP.Text;
+           
                         empleado.fechaNacimiento = DTPNacimiento.Text;
 
                         //Calcular Edad
@@ -96,8 +96,6 @@ namespace AVANCE2
                             age--;
                         empleado.edad = age;
 
-                        empleado.RFC = tbCURP.Text;
-                        empleado.numCuenta = tbCuenta.Text;
                         empleado.email = tbEmail.Text;
                         empleado.contra = tbcontra.Text;
                         
@@ -217,7 +215,7 @@ namespace AVANCE2
         {
             DataGridViewRow nuevorenglon = dgvEmpleado.Rows[n];
             nuevorenglon.Cells[1].Value = tbNombre.Text;
-            nuevorenglon.Cells[4].Value = tbCURP.Text;
+        
             MessageBox.Show("SE HAN ACTUALIZADO LOS DATOS", "Informacion actualizada!!!", MessageBoxButtons.OK);
 
             //nuevorenglon.Cells[1].Value = tbPorcentaje.Text;
@@ -253,9 +251,9 @@ namespace AVANCE2
             n = e.RowIndex;
             DataGridViewRow renglon = dgvEmpleado.Rows[n];
 
-            tbID.Text = renglon.Cells[0].Value.ToString();
+      
             tbNombre.Text = renglon.Cells[1].Value.ToString();
-            tbCURP.Text = renglon.Cells[4].Value.ToString();
+     
             if (n >= 0)
             {
 
