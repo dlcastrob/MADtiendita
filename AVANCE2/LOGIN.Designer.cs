@@ -101,7 +101,6 @@ namespace AVANCE2
             this.cbTUsuario.Name = "cbTUsuario";
             this.cbTUsuario.Size = new System.Drawing.Size(160, 24);
             this.cbTUsuario.TabIndex = 1;
-            this.cbTUsuario.SelectedIndexChanged += new System.EventHandler(this.cbTUsuario_SelectedIndexChanged);
             // 
             // LOGIN
             // 

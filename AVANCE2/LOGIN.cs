@@ -58,10 +58,5 @@ namespace AVANCE2
         {
 
         }
-
-        private void cbTUsuario_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
