@@ -40,8 +40,6 @@ namespace AVANCE2
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.btnAgregar = new System.Windows.Forms.Button();
-            this.btnFinalizar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,12 +73,6 @@ namespace AVANCE2
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
             this.comboBox2.Location = new System.Drawing.Point(177, 96);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(154, 24);
@@ -124,11 +116,7 @@ namespace AVANCE2
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "EFECTIVO",
-            "DEBITO",
-            "CREDITO"});
-            this.comboBox3.Location = new System.Drawing.Point(802, 354);
+            this.comboBox3.Location = new System.Drawing.Point(177, 158);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(154, 24);
             this.comboBox3.TabIndex = 3;
@@ -136,7 +124,7 @@ namespace AVANCE2
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(647, 361);
+            this.label4.Location = new System.Drawing.Point(22, 165);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(104, 17);
             this.label4.TabIndex = 0;
@@ -152,31 +140,11 @@ namespace AVANCE2
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btnAgregar
-            // 
-            this.btnAgregar.Location = new System.Drawing.Point(177, 169);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(75, 32);
-            this.btnAgregar.TabIndex = 7;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
-            // 
-            // btnFinalizar
-            // 
-            this.btnFinalizar.Location = new System.Drawing.Point(413, 413);
-            this.btnFinalizar.Name = "btnFinalizar";
-            this.btnFinalizar.Size = new System.Drawing.Size(83, 40);
-            this.btnFinalizar.TabIndex = 8;
-            this.btnFinalizar.Text = "Finalizar";
-            this.btnFinalizar.UseVisualStyleBackColor = true;
-            // 
             // VENTA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 549);
-            this.Controls.Add(this.btnFinalizar);
-            this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.label4);
@@ -209,7 +177,5 @@ namespace AVANCE2
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.Button btnFinalizar;
     }
 }
