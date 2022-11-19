@@ -58,12 +58,6 @@
     <Compile Include="Ventanas\REPORTE_CAJERO.Designer.cs">
       <DependentUpon>REPORTE_CAJERO.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ventanas\AGREGAREMPLEADO.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ventanas\AGREGAREMPLEADO.designer.cs">
-      <DependentUpon>AGREGAREMPLEADO.cs</DependentUpon>
-    </Compile>
     <Compile Include="Ventanas\AGREGAR_PRODUCTO.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,9 +104,6 @@
     <Compile Include="Ventanas\VENTA.Designer.cs">
       <DependentUpon>VENTA.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Ventanas\AGREGAREMPLEADO.resx">
-      <DependentUpon>AGREGAREMPLEADO.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Ventanas\AGREGAR_PRODUCTO.resx">
       <DependentUpon>AGREGAR_PRODUCTO.cs</DependentUpon>
     </EmbeddedResource>

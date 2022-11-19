@@ -35,7 +35,6 @@ namespace AVANCE2.Ventanas
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -44,6 +43,7 @@ namespace AVANCE2.Ventanas
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // checkedListBox1
@@ -98,14 +98,6 @@ namespace AVANCE2.Ventanas
             this.label3.TabIndex = 6;
             this.label3.Text = "Número de recibo";
             this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(179, 30);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(160, 22);
-            this.textBox2.TabIndex = 5;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // checkedListBox2
             // 
@@ -176,11 +168,21 @@ namespace AVANCE2.Ventanas
             this.textBox5.Size = new System.Drawing.Size(160, 22);
             this.textBox5.TabIndex = 13;
             // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Location = new System.Drawing.Point(177, 33);
+            this.maskedTextBox1.Mask = "99999";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(169, 22);
+            this.maskedTextBox1.TabIndex = 15;
+            this.maskedTextBox1.ValidatingType = typeof(int);
+            // 
             // DEVOLUCION
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(610, 450);
+            this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label6);
@@ -190,7 +192,6 @@ namespace AVANCE2.Ventanas
             this.Controls.Add(this.label4);
             this.Controls.Add(this.checkedListBox2);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -211,7 +212,6 @@ namespace AVANCE2.Ventanas
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.CheckedListBox checkedListBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
@@ -220,5 +220,6 @@ namespace AVANCE2.Ventanas
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
     }
 }

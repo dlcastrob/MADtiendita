@@ -17,7 +17,7 @@ namespace AVANCE2
    
     public partial class formInicio : Form
     {
-        formAgregarCajero NuevoCajero;
+        //formAgregarCajero NuevoCajero;
         AGREGAR_PRODUCTO NuevoProducto;
         VENTA NuevaVenta;
         INVENTARIO NuevoInventario;
@@ -27,7 +27,7 @@ namespace AVANCE2
         public formInicio()
         {
             InitializeComponent();
-            NuevoCajero = new formAgregarCajero();
+           // NuevoCajero = new formAgregarCajero();
             NuevoProducto = new AGREGAR_PRODUCTO();
             NuevaVenta = new VENTA();
             NuevoInventario = new INVENTARIO();
@@ -114,7 +114,7 @@ namespace AVANCE2
 
         private void btnCAJEROS_Click(object sender, EventArgs e)
         {
-            NuevoCajero.ShowDialog();
+            //NuevoCajero.ShowDialog();
         }
 
         private void btnProductos_Click(object sender, EventArgs e)
