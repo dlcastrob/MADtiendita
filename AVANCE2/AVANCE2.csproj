@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ventanas\REPORTE_CAJERO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventanas\REPORTE_CAJERO.Designer.cs">
+      <DependentUpon>REPORTE_CAJERO.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ventanas\AGREGAREMPLEADO.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,11 +64,11 @@
     <Compile Include="Ventanas\AGREGAR_PRODUCTO.Designer.cs">
       <DependentUpon>AGREGAR_PRODUCTO.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ventanas\Form1.cs">
+    <Compile Include="Ventanas\MENU_EMP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ventanas\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Ventanas\MENU_EMP.Designer.cs">
+      <DependentUpon>MENU_EMP.cs</DependentUpon>
     </Compile>
     <Compile Include="FUNCIONES.cs" />
     <Compile Include="Ventanas\INVENTARIO.cs">
@@ -78,11 +84,11 @@
     <Compile Include="Ventanas\LOGIN.Designer.cs">
       <DependentUpon>LOGIN.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ventanas\PRIMERAVENTANA.cs">
+    <Compile Include="Ventanas\MENU_GER.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ventanas\PRIMERAVENTANA.designer.cs">
-      <DependentUpon>PRIMERAVENTANA.cs</DependentUpon>
+    <Compile Include="Ventanas\MENU_GER.designer.cs">
+      <DependentUpon>MENU_GER.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -104,8 +110,8 @@
     <EmbeddedResource Include="Ventanas\AGREGAR_PRODUCTO.resx">
       <DependentUpon>AGREGAR_PRODUCTO.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ventanas\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Ventanas\MENU_EMP.resx">
+      <DependentUpon>MENU_EMP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventanas\INVENTARIO.resx">
       <DependentUpon>INVENTARIO.cs</DependentUpon>
@@ -113,8 +119,8 @@
     <EmbeddedResource Include="Ventanas\LOGIN.resx">
       <DependentUpon>LOGIN.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ventanas\PRIMERAVENTANA.resx">
-      <DependentUpon>PRIMERAVENTANA.cs</DependentUpon>
+    <EmbeddedResource Include="Ventanas\MENU_GER.resx">
+      <DependentUpon>MENU_GER.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -125,6 +131,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Ventanas\REPORTE_CAJERO.resx">
+      <DependentUpon>REPORTE_CAJERO.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ventanas\REPORTE_DE_VENTAS.resx">
       <DependentUpon>REPORTE_DE_VENTAS.cs</DependentUpon>
     </EmbeddedResource>
