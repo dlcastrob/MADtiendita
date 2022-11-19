@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ventanas\DEVOLUCION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventanas\DEVOLUCION.Designer.cs">
+      <DependentUpon>DEVOLUCION.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ventanas\REPORTE_CAJERO.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ventanas\AGREGAR_PRODUCTO.resx">
       <DependentUpon>AGREGAR_PRODUCTO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventanas\DEVOLUCION.resx">
+      <DependentUpon>DEVOLUCION.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventanas\MENU_EMP.resx">
       <DependentUpon>MENU_EMP.cs</DependentUpon>
