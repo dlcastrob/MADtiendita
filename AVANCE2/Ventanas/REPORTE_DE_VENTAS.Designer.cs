@@ -67,8 +67,10 @@ namespace AVANCE2
             this.Column9});
             this.dataGridView1.Location = new System.Drawing.Point(53, 165);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(1208, 337);
             this.dataGridView1.TabIndex = 3;
             // 
@@ -103,7 +105,7 @@ namespace AVANCE2
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(139, 40);
+            this.dateTimePicker1.Location = new System.Drawing.Point(163, 40);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
             this.dateTimePicker1.TabIndex = 2;
@@ -121,7 +123,7 @@ namespace AVANCE2
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(393, 45);
+            this.label2.Location = new System.Drawing.Point(417, 45);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 17);
             this.label2.TabIndex = 5;
@@ -129,7 +131,7 @@ namespace AVANCE2
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(476, 40);
+            this.dateTimePicker2.Location = new System.Drawing.Point(516, 40);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 22);
             this.dateTimePicker2.TabIndex = 6;
@@ -137,7 +139,7 @@ namespace AVANCE2
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(360, 45);
+            this.label3.Location = new System.Drawing.Point(384, 45);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(16, 17);
             this.label3.TabIndex = 7;
