@@ -44,6 +44,11 @@ namespace AVANCE2
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,7 +65,7 @@ namespace AVANCE2
             this.Column7,
             this.Column8,
             this.Column9});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 74);
+            this.dataGridView1.Location = new System.Drawing.Point(53, 165);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -70,23 +75,26 @@ namespace AVANCE2
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 36);
+            this.label7.Location = new System.Drawing.Point(52, 75);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(39, 17);
+            this.label7.Size = new System.Drawing.Size(43, 17);
             this.label7.TabIndex = 0;
-            this.label7.Text = "Filtro";
+            this.label7.Text = "Cajas";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(66, 29);
+            this.comboBox1.Items.AddRange(new object[] {
+            "Todas"});
+            this.comboBox1.Location = new System.Drawing.Point(163, 68);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 24);
             this.comboBox1.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(544, 432);
+            this.button1.Location = new System.Drawing.Point(585, 523);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(115, 44);
             this.button1.TabIndex = 4;
@@ -95,7 +103,7 @@ namespace AVANCE2
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(445, 31);
+            this.dateTimePicker1.Location = new System.Drawing.Point(139, 40);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
             this.dateTimePicker1.TabIndex = 2;
@@ -103,11 +111,12 @@ namespace AVANCE2
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(333, 36);
+            this.label1.Location = new System.Drawing.Point(50, 45);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 17);
+            this.label1.Size = new System.Drawing.Size(83, 17);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Fecha de venta";
+            this.label1.Text = "Fecha inicio";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Column1
             // 
@@ -172,11 +181,63 @@ namespace AVANCE2
             this.Column9.Name = "Column9";
             this.Column9.Width = 125;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(393, 45);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(77, 17);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Fecha final";
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(476, 40);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker2.TabIndex = 6;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(360, 45);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(16, 17);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "a";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Todas"});
+            this.comboBox2.Location = new System.Drawing.Point(163, 99);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 24);
+            this.comboBox2.TabIndex = 9;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(52, 106);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(105, 17);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Departamentos";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
             // REPORTE_DE_VENTAS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1355, 488);
+            this.ClientSize = new System.Drawing.Size(1355, 596);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.button1);
@@ -185,6 +246,7 @@ namespace AVANCE2
             this.Controls.Add(this.dataGridView1);
             this.Name = "REPORTE_DE_VENTAS";
             this.Text = "REPORTE DE VENTAS";
+            this.Load += new System.EventHandler(this.REPORTE_DE_VENTAS_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -208,5 +270,10 @@ namespace AVANCE2
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label4;
     }
 }
