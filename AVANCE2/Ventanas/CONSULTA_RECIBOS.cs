@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AVANCE2.Ventanas
 {
-    public partial class CONSULTA_PRECIOS : Form
+    public partial class CONSULTA_RECIBOS : Form
     {
-        public CONSULTA_PRECIOS()
+        public CONSULTA_RECIBOS()
         {
             InitializeComponent();
         }

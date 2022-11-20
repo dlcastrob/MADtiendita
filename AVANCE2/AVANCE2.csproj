@@ -52,11 +52,11 @@
     <Compile Include="Ventanas\AGREGAR_EMPLEADO.Designer.cs">
       <DependentUpon>AGREGAR_EMPLEADO.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ventanas\CONSULTA_PRECIOS.cs">
+    <Compile Include="Ventanas\CONSULTA_RECIBOS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ventanas\CONSULTA_PRECIOS.Designer.cs">
-      <DependentUpon>CONSULTA_PRECIOS.cs</DependentUpon>
+    <Compile Include="Ventanas\CONSULTA_RECIBOS.Designer.cs">
+      <DependentUpon>CONSULTA_RECIBOS.cs</DependentUpon>
     </Compile>
     <Compile Include="Ventanas\DEVOLUCION.cs">
       <SubType>Form</SubType>

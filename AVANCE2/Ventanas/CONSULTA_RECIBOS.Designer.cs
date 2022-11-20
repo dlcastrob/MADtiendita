@@ -1,7 +1,7 @@
 ﻿
 namespace AVANCE2.Ventanas
 {
-    partial class CONSULTA_PRECIOS
+    partial class CONSULTA_RECIBOS
     {
         /// <summary>
         /// Required designer variable.
