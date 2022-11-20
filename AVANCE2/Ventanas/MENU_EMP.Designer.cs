@@ -29,23 +29,12 @@ namespace AVANCE2
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnReporteCajero = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnInventario = new System.Windows.Forms.Button();
-            this.btnProductos = new System.Windows.Forms.Button();
             this.lbtitulo = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
-            // 
-            // btnReporteCajero
-            // 
-            this.btnReporteCajero.Location = new System.Drawing.Point(256, 227);
-            this.btnReporteCajero.Name = "btnReporteCajero";
-            this.btnReporteCajero.Size = new System.Drawing.Size(242, 66);
-            this.btnReporteCajero.TabIndex = 14;
-            this.btnReporteCajero.Text = "Reporte por cajero";
-            this.btnReporteCajero.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -58,21 +47,12 @@ namespace AVANCE2
             // 
             // btnInventario
             // 
-            this.btnInventario.Location = new System.Drawing.Point(256, 140);
+            this.btnInventario.Location = new System.Drawing.Point(267, 183);
             this.btnInventario.Name = "btnInventario";
             this.btnInventario.Size = new System.Drawing.Size(242, 65);
             this.btnInventario.TabIndex = 12;
-            this.btnInventario.Text = "Inventario";
+            this.btnInventario.Text = "Venta";
             this.btnInventario.UseVisualStyleBackColor = true;
-            // 
-            // btnProductos
-            // 
-            this.btnProductos.Location = new System.Drawing.Point(546, 139);
-            this.btnProductos.Name = "btnProductos";
-            this.btnProductos.Size = new System.Drawing.Size(242, 66);
-            this.btnProductos.TabIndex = 10;
-            this.btnProductos.Text = "Gestion productos";
-            this.btnProductos.UseVisualStyleBackColor = true;
             // 
             // lbtitulo
             // 
@@ -112,10 +92,8 @@ namespace AVANCE2
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnReporteCajero);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnInventario);
-            this.Controls.Add(this.btnProductos);
             this.Controls.Add(this.lbtitulo);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -125,11 +103,8 @@ namespace AVANCE2
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnReporteCajero;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnInventario;
-        private System.Windows.Forms.Button btnProductos;
         private System.Windows.Forms.Label lbtitulo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox1;

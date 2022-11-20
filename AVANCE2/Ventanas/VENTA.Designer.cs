@@ -73,7 +73,6 @@ namespace AVANCE2
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
             this.label14 = new System.Windows.Forms.Label();
@@ -526,15 +525,6 @@ namespace AVANCE2
             this.label13.Text = "Subtotal";
             this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(919, 210);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(57, 44);
-            this.button4.TabIndex = 23;
-            this.button4.Text = "->";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
             // button6
             // 
             this.button6.Location = new System.Drawing.Point(35, 343);
@@ -577,7 +567,7 @@ namespace AVANCE2
             // 
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button7.Location = new System.Drawing.Point(465, 497);
+            this.button7.Location = new System.Drawing.Point(467, 515);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(115, 62);
             this.button7.TabIndex = 29;
@@ -589,7 +579,6 @@ namespace AVANCE2
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1601, 740);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.numericUpDown1);
@@ -670,7 +659,6 @@ namespace AVANCE2
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.MaskedTextBox maskedTextBox3;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button7;
     }
 }

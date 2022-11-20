@@ -49,16 +49,20 @@ namespace AVANCE2.Ventanas
             // checkedListBox1
             // 
             this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Items.AddRange(new object[] {
+            "Deficiencia del producto",
+            "Expectativas insatisfechas",
+            "Talla o modelo incorrecto"});
             this.checkedListBox1.Location = new System.Drawing.Point(41, 141);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(173, 89);
+            this.checkedListBox1.Size = new System.Drawing.Size(207, 89);
             this.checkedListBox1.TabIndex = 0;
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(41, 285);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(160, 22);
+            this.textBox1.Size = new System.Drawing.Size(207, 22);
             this.textBox1.TabIndex = 1;
             // 
             // label1
@@ -82,7 +86,7 @@ namespace AVANCE2.Ventanas
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(403, 373);
+            this.button1.Location = new System.Drawing.Point(494, 576);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(184, 53);
             this.button1.TabIndex = 4;
@@ -104,7 +108,7 @@ namespace AVANCE2.Ventanas
             this.checkedListBox2.FormattingEnabled = true;
             this.checkedListBox2.Location = new System.Drawing.Point(289, 141);
             this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.Size = new System.Drawing.Size(298, 89);
+            this.checkedListBox2.Size = new System.Drawing.Size(409, 276);
             this.checkedListBox2.TabIndex = 7;
             // 
             // label4
@@ -120,7 +124,7 @@ namespace AVANCE2.Ventanas
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(286, 255);
+            this.label5.Location = new System.Drawing.Point(377, 458);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(131, 17);
             this.label5.TabIndex = 10;
@@ -128,7 +132,7 @@ namespace AVANCE2.Ventanas
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(427, 252);
+            this.textBox3.Location = new System.Drawing.Point(518, 455);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(160, 22);
@@ -137,7 +141,7 @@ namespace AVANCE2.Ventanas
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(286, 288);
+            this.label6.Location = new System.Drawing.Point(377, 491);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(60, 17);
             this.label6.TabIndex = 12;
@@ -145,7 +149,7 @@ namespace AVANCE2.Ventanas
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(427, 285);
+            this.textBox4.Location = new System.Drawing.Point(518, 488);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(160, 22);
@@ -154,7 +158,7 @@ namespace AVANCE2.Ventanas
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(286, 316);
+            this.label7.Location = new System.Drawing.Point(377, 519);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(40, 17);
             this.label7.TabIndex = 14;
@@ -162,7 +166,7 @@ namespace AVANCE2.Ventanas
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(427, 313);
+            this.textBox5.Location = new System.Drawing.Point(518, 516);
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(160, 22);
@@ -181,7 +185,7 @@ namespace AVANCE2.Ventanas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(610, 450);
+            this.ClientSize = new System.Drawing.Size(757, 656);
             this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox5);
