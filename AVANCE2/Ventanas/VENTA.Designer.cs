@@ -78,6 +78,7 @@ namespace AVANCE2
             this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -142,12 +143,15 @@ namespace AVANCE2
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1465, 669);
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.button1.Location = new System.Drawing.Point(1513, 17);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 44);
+            this.button1.Size = new System.Drawing.Size(53, 47);
             this.button1.TabIndex = 6;
-            this.button1.Text = "Regresar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Text = "↩";
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView2
@@ -393,9 +397,10 @@ namespace AVANCE2
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(624, 41);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(47, 17);
+            this.label11.Size = new System.Drawing.Size(52, 17);
             this.label11.TabIndex = 20;
             this.label11.Text = "Fecha";
             this.label11.Click += new System.EventHandler(this.label11_Click);
@@ -403,9 +408,10 @@ namespace AVANCE2
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(731, 41);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(39, 17);
+            this.label12.Size = new System.Drawing.Size(43, 17);
             this.label12.TabIndex = 21;
             this.label12.Text = "Hora";
             // 
@@ -416,6 +422,7 @@ namespace AVANCE2
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.button7);
             this.groupBox4.Controls.Add(this.button5);
             this.groupBox4.Controls.Add(this.label14);
             this.groupBox4.Controls.Add(this.maskedTextBox3);
@@ -566,6 +573,17 @@ namespace AVANCE2
             this.button5.Text = "Pagar";
             this.button5.UseVisualStyleBackColor = true;
             // 
+            // button7
+            // 
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button7.Location = new System.Drawing.Point(465, 497);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(115, 62);
+            this.button7.TabIndex = 29;
+            this.button7.Text = "Generar recibo";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
             // VENTA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -653,5 +671,6 @@ namespace AVANCE2
         private System.Windows.Forms.MaskedTextBox maskedTextBox3;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button7;
     }
 }
