@@ -52,6 +52,12 @@
     <Compile Include="Ventanas\AGREGAR_EMPLEADO.Designer.cs">
       <DependentUpon>AGREGAR_EMPLEADO.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ventanas\CONSULTA_PRECIOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventanas\CONSULTA_PRECIOS.Designer.cs">
+      <DependentUpon>CONSULTA_PRECIOS.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ventanas\DEVOLUCION.cs">
       <SubType>Form</SubType>
     </Compile>
