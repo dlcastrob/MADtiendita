@@ -44,6 +44,7 @@ namespace AVANCE2.Ventanas
             this.label7 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // checkedListBox1
@@ -181,11 +182,24 @@ namespace AVANCE2.Ventanas
             this.maskedTextBox1.TabIndex = 15;
             this.maskedTextBox1.ValidatingType = typeof(int);
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.button2.Location = new System.Drawing.Point(681, 33);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(53, 47);
+            this.button2.TabIndex = 16;
+            this.button2.Text = "↩";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // DEVOLUCION
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(757, 656);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox5);
@@ -225,5 +239,6 @@ namespace AVANCE2.Ventanas
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.Button button2;
     }
 }

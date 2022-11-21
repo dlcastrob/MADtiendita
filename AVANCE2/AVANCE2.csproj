@@ -122,6 +122,9 @@
     <EmbeddedResource Include="Ventanas\AGREGAR_PRODUCTO.resx">
       <DependentUpon>AGREGAR_PRODUCTO.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ventanas\CONSULTA_RECIBOS.resx">
+      <DependentUpon>CONSULTA_RECIBOS.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ventanas\DEVOLUCION.resx">
       <DependentUpon>DEVOLUCION.cs</DependentUpon>
     </EmbeddedResource>

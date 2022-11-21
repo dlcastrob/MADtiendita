@@ -33,7 +33,6 @@ namespace AVANCE2.Ventanas
             this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -67,6 +66,7 @@ namespace AVANCE2.Ventanas
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -111,15 +111,6 @@ namespace AVANCE2.Ventanas
             this.maskedTextBox2.TabIndex = 27;
             this.maskedTextBox2.ValidatingType = typeof(int);
             // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(956, 501);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(115, 44);
-            this.button4.TabIndex = 36;
-            this.button4.Text = "Regresar";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(528, 499);
@@ -151,13 +142,13 @@ namespace AVANCE2.Ventanas
             this.Column7,
             this.Column8,
             this.Column9});
-            this.dataGridView1.Location = new System.Drawing.Point(387, 72);
+            this.dataGridView1.Location = new System.Drawing.Point(915, 72);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(919, 399);
+            this.dataGridView1.Size = new System.Drawing.Size(391, 399);
             this.dataGridView1.TabIndex = 33;
             // 
             // Column1
@@ -424,16 +415,28 @@ namespace AVANCE2.Ventanas
             this.maskedTextBox1.TabIndex = 8;
             this.maskedTextBox1.ValidatingType = typeof(int);
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.button4.Location = new System.Drawing.Point(1053, 500);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(53, 47);
+            this.button4.TabIndex = 38;
+            this.button4.Text = "↩";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
             // AGREGAR_EMPLEADO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1333, 685);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.maskedTextBox5);
             this.Controls.Add(this.maskedTextBox4);
             this.Controls.Add(this.maskedTextBox3);
             this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dataGridView1);
@@ -467,7 +470,6 @@ namespace AVANCE2.Ventanas
         private System.Windows.Forms.MaskedTextBox maskedTextBox4;
         private System.Windows.Forms.MaskedTextBox maskedTextBox3;
         private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -501,5 +503,6 @@ namespace AVANCE2.Ventanas
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.Button button4;
     }
 }
