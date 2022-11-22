@@ -157,7 +157,7 @@ namespace AVANCE2
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
             "Todas"});
-            this.comboBox3.Location = new System.Drawing.Point(456, 83);
+            this.comboBox3.Location = new System.Drawing.Point(175, 93);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(121, 24);
             this.comboBox3.TabIndex = 27;
@@ -166,7 +166,7 @@ namespace AVANCE2
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(345, 90);
+            this.label1.Location = new System.Drawing.Point(64, 100);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(105, 17);
             this.label1.TabIndex = 26;

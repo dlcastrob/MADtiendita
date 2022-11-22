@@ -96,7 +96,7 @@ namespace AVANCE2
             this.Controls.Add(this.btnInventario);
             this.Controls.Add(this.lbtitulo);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "MENÚ ";
             this.ResumeLayout(false);
             this.PerformLayout();
 
