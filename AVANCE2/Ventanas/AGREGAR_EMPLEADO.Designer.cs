@@ -472,7 +472,7 @@ namespace AVANCE2.Ventanas
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label7);
             this.Name = "AGREGAR_EMPLEADO";
-            this.Text = "AGREGAR_EMPLEADO";
+            this.Text = "AGREGAR EMPLEADO";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
