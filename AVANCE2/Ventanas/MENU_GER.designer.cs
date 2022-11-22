@@ -40,9 +40,10 @@ namespace AVANCE2
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,7 +52,7 @@ namespace AVANCE2
             this.lbtitulo.AutoSize = true;
             this.lbtitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbtitulo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbtitulo.Location = new System.Drawing.Point(248, 18);
+            this.lbtitulo.Location = new System.Drawing.Point(251, 39);
             this.lbtitulo.Name = "lbtitulo";
             this.lbtitulo.Size = new System.Drawing.Size(282, 25);
             this.lbtitulo.TabIndex = 0;
@@ -160,16 +161,6 @@ namespace AVANCE2
             this.dataGridView1.Size = new System.Drawing.Size(327, 150);
             this.dataGridView1.TabIndex = 11;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(114, 467);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 17);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "Punto de reorden";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
             // Column1
             // 
             this.Column1.HeaderText = "Nombre";
@@ -186,6 +177,27 @@ namespace AVANCE2
             this.Column2.ReadOnly = true;
             this.Column2.Width = 125;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(114, 467);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(153, 20);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Punto de reorden";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(283, 17);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Seleccione en el menú la opción que desee";
+            // 
             // formInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -193,6 +205,7 @@ namespace AVANCE2
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(965, 742);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button5);
@@ -230,6 +243,7 @@ namespace AVANCE2
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.Label label2;
     }
 }
 

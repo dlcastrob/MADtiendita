@@ -84,7 +84,7 @@ namespace AVANCE2
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(160, 9);
+            this.label3.Location = new System.Drawing.Point(160, 23);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(107, 17);
             this.label3.TabIndex = 0;
@@ -97,7 +97,7 @@ namespace AVANCE2
             this.cbTUsuario.Items.AddRange(new object[] {
             "Administrador",
             "Cajero"});
-            this.cbTUsuario.Location = new System.Drawing.Point(163, 39);
+            this.cbTUsuario.Location = new System.Drawing.Point(163, 53);
             this.cbTUsuario.Name = "cbTUsuario";
             this.cbTUsuario.Size = new System.Drawing.Size(160, 24);
             this.cbTUsuario.TabIndex = 1;

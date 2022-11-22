@@ -46,6 +46,7 @@ namespace AVANCE2
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -207,11 +208,21 @@ namespace AVANCE2
             this.button1.Text = "↩";
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(12, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(189, 17);
+            this.label5.TabIndex = 21;
+            this.label5.Text = "Genere un reporte de cajero";
+            // 
             // REPORTE_CAJERO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1014, 625);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label4);
@@ -224,7 +235,7 @@ namespace AVANCE2
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dataGridView1);
             this.Name = "REPORTE_CAJERO";
-            this.Text = "Form2";
+            this.Text = "REPORTE DE CAJERO";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -249,5 +260,6 @@ namespace AVANCE2
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label5;
     }
 }

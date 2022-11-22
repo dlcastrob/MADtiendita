@@ -67,6 +67,7 @@ namespace AVANCE2.Ventanas
             this.label14 = new System.Windows.Forms.Label();
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             this.button5 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -421,18 +422,32 @@ namespace AVANCE2.Ventanas
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(169, 537);
+            this.button5.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button5.Location = new System.Drawing.Point(171, 553);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(137, 48);
+            this.button5.Size = new System.Drawing.Size(147, 49);
             this.button5.TabIndex = 56;
-            this.button5.Text = "Agregar";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Text = "+ Agregar";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(17, 12);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(148, 17);
+            this.label3.TabIndex = 57;
+            this.label3.Text = "Agregue un empleado";
             // 
             // AGREGAR_EMPLEADO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1596, 685);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.maskedTextBox2);
             this.Controls.Add(this.textBox6);
@@ -519,5 +534,6 @@ namespace AVANCE2.Ventanas
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.MaskedTextBox maskedTextBox2;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label label3;
     }
 }
