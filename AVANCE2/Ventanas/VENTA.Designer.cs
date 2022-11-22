@@ -54,11 +54,9 @@ namespace AVANCE2
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -79,6 +77,9 @@ namespace AVANCE2
             this.label13 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -315,27 +316,17 @@ namespace AVANCE2
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.groupBox2.Controls.Add(this.button3);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.maskedTextBox2);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.groupBox3);
             this.groupBox2.Location = new System.Drawing.Point(533, 92);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(380, 645);
+            this.groupBox2.Size = new System.Drawing.Size(447, 645);
             this.groupBox2.TabIndex = 19;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Agregar artículo";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(201, 126);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(86, 29);
-            this.button3.TabIndex = 21;
-            this.button3.Text = "Agregar";
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
@@ -345,7 +336,7 @@ namespace AVANCE2
             this.groupBox3.Controls.Add(this.textBox6);
             this.groupBox3.Location = new System.Drawing.Point(16, 161);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(349, 466);
+            this.groupBox3.Size = new System.Drawing.Size(422, 466);
             this.groupBox3.TabIndex = 19;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Buscar producto";
@@ -365,23 +356,17 @@ namespace AVANCE2
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column4});
+            this.Column4,
+            this.Column9,
+            this.Column10});
             this.dataGridView1.Location = new System.Drawing.Point(11, 79);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(324, 310);
+            this.dataGridView1.Size = new System.Drawing.Size(405, 310);
             this.dataGridView1.TabIndex = 4;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Nombre artículo";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Width = 125;
             // 
             // textBox6
             // 
@@ -592,6 +577,30 @@ namespace AVANCE2
             this.label15.TabIndex = 22;
             this.label15.Text = "Realice una venta";
             // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Nombre artículo";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 125;
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "Numero de artículo";
+            this.Column9.MinimumWidth = 6;
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            this.Column9.Width = 125;
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "Cantidad";
+            this.Column10.MinimumWidth = 6;
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
+            this.Column10.Width = 80;
+            // 
             // VENTA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -652,11 +661,9 @@ namespace AVANCE2
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.Label label11;
@@ -680,5 +687,8 @@ namespace AVANCE2
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
     }
 }
