@@ -85,8 +85,14 @@ namespace AVANCE2
                 conectar();
                 string qry = "Select Nombre, email, Fecha_modif from Usuarios where Activo = 0;";
                 _comandosql = new SqlCommand(qry, _conexion);
-                _comandosql.CommandType = CommandType.Text;
+                _comandosql.CommandType = CommandType.StoredProcedure;
                 _comandosql.CommandTimeout = 1200;
+
+
+                var parametro1 = _comandosql.Parameters.Add("@Opc", SqlDbType.Char, 1);
+               // parametro1.Value = opc;
+
+
 
                 _adaptador.SelectCommand = _comandosql;
                 _adaptador.Fill(tabla);
