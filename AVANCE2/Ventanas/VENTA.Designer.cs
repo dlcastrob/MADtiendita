@@ -55,8 +55,12 @@ namespace AVANCE2
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -75,11 +79,7 @@ namespace AVANCE2
             this.button6 = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -341,6 +341,19 @@ namespace AVANCE2
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Buscar producto";
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.button4.Location = new System.Drawing.Point(110, 404);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(115, 44);
+            this.button4.TabIndex = 30;
+            this.button4.Text = "+ Agregar";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -367,6 +380,30 @@ namespace AVANCE2
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(405, 310);
             this.dataGridView1.TabIndex = 4;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Nombre artículo";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 125;
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "Numero de artículo";
+            this.Column9.MinimumWidth = 6;
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            this.Column9.Width = 125;
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "Cantidad";
+            this.Column10.MinimumWidth = 6;
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
+            this.Column10.Width = 80;
             // 
             // textBox6
             // 
@@ -555,19 +592,6 @@ namespace AVANCE2
             this.label13.Text = "Subtotal";
             this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button4.Location = new System.Drawing.Point(110, 404);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(115, 44);
-            this.button4.TabIndex = 30;
-            this.button4.Text = "+ Agregar";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -576,30 +600,6 @@ namespace AVANCE2
             this.label15.Size = new System.Drawing.Size(122, 17);
             this.label15.TabIndex = 22;
             this.label15.Text = "Realice una venta";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Nombre artículo";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Width = 125;
-            // 
-            // Column9
-            // 
-            this.Column9.HeaderText = "Numero de artículo";
-            this.Column9.MinimumWidth = 6;
-            this.Column9.Name = "Column9";
-            this.Column9.ReadOnly = true;
-            this.Column9.Width = 125;
-            // 
-            // Column10
-            // 
-            this.Column10.HeaderText = "Cantidad";
-            this.Column10.MinimumWidth = 6;
-            this.Column10.Name = "Column10";
-            this.Column10.ReadOnly = true;
-            this.Column10.Width = 80;
             // 
             // VENTA
             // 

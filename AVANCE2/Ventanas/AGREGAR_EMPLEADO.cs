@@ -31,5 +31,16 @@ namespace AVANCE2.Ventanas
         {
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+        }
     }
 }

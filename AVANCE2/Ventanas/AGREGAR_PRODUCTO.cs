@@ -81,5 +81,11 @@ namespace AVANCE2
         {
 
         }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+
+        }
     }
 }

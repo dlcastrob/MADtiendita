@@ -12,8 +12,10 @@ namespace AVANCE2
 {
     public partial class Form1 : Form
     {
+        VENTA VentaNueva;
         public Form1()
         {
+            VentaNueva = new VENTA();
             InitializeComponent();
         }
 
@@ -25,6 +27,16 @@ namespace AVANCE2
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnInventario_Click(object sender, EventArgs e)
+        {
+            VentaNueva.ShowDialog();
         }
     }
 }
