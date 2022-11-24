@@ -17,10 +17,12 @@ namespace AVANCE2
     public partial class LOGIN : Form
     {
         formInicio NuevoInicio;
+        Form1 NuevoInicioCajero;
         public LOGIN()
         {
             InitializeComponent();
             NuevoInicio = new formInicio();
+            NuevoInicioCajero = new Form1();
         }
         //string usuario = tbUsuario;
         
@@ -38,6 +40,7 @@ namespace AVANCE2
             else if (CB1 == "Cajero" && T1 == "DIEGO" && T2 == "22")
             {
                 MessageBox.Show("USTED INICIO SESION", "Buenas noticias", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                NuevoInicioCajero.ShowDialog();
             }
             else if (CB1 == "Administrador")
             {

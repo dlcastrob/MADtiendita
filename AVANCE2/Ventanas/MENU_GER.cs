@@ -19,9 +19,12 @@ namespace AVANCE2
     {
         //formAgregarCajero NuevoCajero;
         AGREGAR_PRODUCTO NuevoProducto;
+        Ventanas.AGREGAR_EMPLEADO NuevoEmpleado;
         VENTA NuevaVenta;
+        Ventanas.DEVOLUCION NuevaDevolucion;
         INVENTARIO NuevoInventario;
         REPORTE_DE_VENTAS NuevoReporte;
+        REPORTE_CAJERO NuevoReporteCajero;
         //LOGIN NuevoLogin;
         //formEmpleados NuevoEmpleado;
         public formInicio()
@@ -29,9 +32,12 @@ namespace AVANCE2
             InitializeComponent();
            // NuevoCajero = new formAgregarCajero();
             NuevoProducto = new AGREGAR_PRODUCTO();
+            NuevoEmpleado = new Ventanas.AGREGAR_EMPLEADO();
             NuevaVenta = new VENTA();
+            NuevaDevolucion = new Ventanas.DEVOLUCION();
             NuevoInventario = new INVENTARIO();
             NuevoReporte = new REPORTE_DE_VENTAS();
+            NuevoReporteCajero = new REPORTE_CAJERO();
             //NuevoLogin = new LOGIN();
             //NuevoEmpleado = new formEmpleados();
         }
@@ -114,7 +120,8 @@ namespace AVANCE2
 
         private void btnCAJEROS_Click(object sender, EventArgs e)
         {
-            //NuevoCajero.ShowDialog();
+            NuevoEmpleado.ShowDialog();
+            
         }
 
         private void btnProductos_Click(object sender, EventArgs e)
@@ -138,17 +145,27 @@ namespace AVANCE2
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            NuevoReporte.ShowDialog();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            NuevoInventario.ShowDialog();
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            NuevaDevolucion.ShowDialog();
+        }
+
+        private void button3_Click_2(object sender, EventArgs e)
+        {
+            NuevoReporteCajero.ShowDialog();
         }
     }
        

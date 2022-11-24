@@ -93,7 +93,7 @@ namespace AVANCE2
             this.button2.Location = new System.Drawing.Point(114, 686);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(114, 35);
-            this.button2.TabIndex = 7;
+            this.button2.TabIndex = 10;
             this.button2.Text = "Salir y Guardar";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
@@ -103,7 +103,7 @@ namespace AVANCE2
             this.btnReportes.Location = new System.Drawing.Point(114, 181);
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Size = new System.Drawing.Size(229, 66);
-            this.btnReportes.TabIndex = 5;
+            this.btnReportes.TabIndex = 3;
             this.btnReportes.Text = "Consultar recibos";
             this.btnReportes.UseVisualStyleBackColor = true;
             this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
@@ -113,16 +113,17 @@ namespace AVANCE2
             this.button3.Location = new System.Drawing.Point(448, 353);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(229, 66);
-            this.button3.TabIndex = 6;
+            this.button3.TabIndex = 8;
             this.button3.Text = "Reporte por cajero";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_2);
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(114, 353);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(229, 66);
-            this.button1.TabIndex = 8;
+            this.button1.TabIndex = 7;
             this.button1.Text = "Reporte por ventas";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -132,7 +133,7 @@ namespace AVANCE2
             this.button4.Location = new System.Drawing.Point(114, 265);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(229, 66);
-            this.button4.TabIndex = 9;
+            this.button4.TabIndex = 5;
             this.button4.Text = "Inventario";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -142,9 +143,10 @@ namespace AVANCE2
             this.button5.Location = new System.Drawing.Point(448, 265);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(229, 66);
-            this.button5.TabIndex = 10;
+            this.button5.TabIndex = 6;
             this.button5.Text = "Devoluciones";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // dataGridView1
             // 
@@ -159,7 +161,7 @@ namespace AVANCE2
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(327, 150);
-            this.dataGridView1.TabIndex = 11;
+            this.dataGridView1.TabIndex = 9;
             // 
             // Column1
             // 
@@ -185,7 +187,7 @@ namespace AVANCE2
             this.label1.Location = new System.Drawing.Point(114, 467);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(153, 20);
-            this.label1.TabIndex = 12;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Punto de reorden";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -195,7 +197,7 @@ namespace AVANCE2
             this.label2.Location = new System.Drawing.Point(12, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(283, 17);
-            this.label2.TabIndex = 13;
+            this.label2.TabIndex = 0;
             this.label2.Text = "Seleccione en el menú la opción que desee";
             // 
             // formInicio
