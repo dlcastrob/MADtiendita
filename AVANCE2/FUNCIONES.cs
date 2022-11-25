@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 namespace AVANCE2
 {
-    //jeje
-    //SESESESEROOOOOOOOOOOOOOOOOOOOOOOOO
-    //AWE
+   
     public static class FUNCIONES
     {
 
