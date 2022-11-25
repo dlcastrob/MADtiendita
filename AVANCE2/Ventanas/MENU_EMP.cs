@@ -31,7 +31,20 @@ namespace AVANCE2
 
         private void button2_Click(object sender, EventArgs e)
         {
+            var dialog = new DialogResult();
 
+            dialog = MessageBox.Show("Seguro que quiere cerrar la aplicacion?", "Cuidado!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+
+            if (dialog == DialogResult.No)
+            {
+                this.Close();
+            }
+            if (dialog == DialogResult.Yes)
+            {
+
+                Application.Exit();
+            }
         }
 
         private void btnInventario_Click(object sender, EventArgs e)

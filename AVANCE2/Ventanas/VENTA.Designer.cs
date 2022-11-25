@@ -80,6 +80,7 @@ namespace AVANCE2
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.tbPrueba = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -423,7 +424,6 @@ namespace AVANCE2
             this.Column7});
             this.dataGridView3.Location = new System.Drawing.Point(35, 38);
             this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.ReadOnly = true;
             this.dataGridView3.RowHeadersWidth = 51;
             this.dataGridView3.RowTemplate.Height = 24;
             this.dataGridView3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -602,11 +602,19 @@ namespace AVANCE2
             this.label15.TabIndex = 22;
             this.label15.Text = "Realice una venta";
             // 
+            // tbPrueba
+            // 
+            this.tbPrueba.Location = new System.Drawing.Point(826, 17);
+            this.tbPrueba.Name = "tbPrueba";
+            this.tbPrueba.Size = new System.Drawing.Size(100, 22);
+            this.tbPrueba.TabIndex = 23;
+            // 
             // VENTA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1601, 740);
+            this.Controls.Add(this.tbPrueba);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -691,5 +699,6 @@ namespace AVANCE2
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.TextBox tbPrueba;
     }
 }
