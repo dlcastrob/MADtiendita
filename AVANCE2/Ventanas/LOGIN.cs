@@ -37,7 +37,7 @@ namespace AVANCE2
                 MessageBox.Show("Porfavor seleccione su puesto", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.None);
                 
             }
-            else if (CB1 == "Cajero" && T1 == "DIEGO" && T2 == "22")
+            else if (CB1 == "Cajero" && T1 == "DIANA" && T2 == "11")
             {
                 MessageBox.Show("USTED INICIO SESION", "Buenas noticias", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 NuevoInicioCajero.ShowDialog();

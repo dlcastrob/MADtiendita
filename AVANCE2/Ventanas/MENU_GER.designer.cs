@@ -160,7 +160,7 @@ namespace AVANCE2
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(327, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(419, 150);
             this.dataGridView1.TabIndex = 9;
             // 
             // Column1

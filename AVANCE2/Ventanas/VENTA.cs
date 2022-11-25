@@ -7,7 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using iTextSharp;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
 namespace AVANCE2
 {
     public partial class VENTA : Form
@@ -77,6 +79,56 @@ namespace AVANCE2
         private void groupBox2_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
+            using (SaveFileDialog sfd = new SaveFileDialog() { Filter = "PDF file|.pdf", ValidateNames = true })
+            {
+                if (sfd.ShowDialog() == DialogResult.OK)
+                {
+
+
+                    Document doc = new Document(PageSize.LETTER, 10, 10, 42, 35);
+                    try
+                    {
+                        doc.Open();
+
+                        PdfPTable table = new PdfPTable(dataGridView3.Columns.Count);
+
+                        for (int j = 0; j < dataGridView3.Columns.Count; j++)
+                        {
+                            table.AddCell(new Phrase(dataGridView3.Columns[j].HeaderText));
+                        }
+
+                        table.HeaderRows = 1;
+
+                        for (int i = 0; i < dataGridView3.Rows.Count; i++)
+                        {
+                            for (int k = 0; k < dataGridView3.Columns.Count; k++)
+                            {
+                                if (dataGridView3[k, i].Value != null)
+                                {
+                                    table.AddCell(new Phrase(dataGridView3[k, i].Value.ToString()));
+                                }
+                            }
+                        }
+                        doc.Add(table);
+                        /* PdfWriter.GetInstance(doc, new FileStream(sfd.FileName, FileMode.Create));
+                        doc.Open();
+                        doc.Add(new iTextSharp.text.Paragraph(tbPrueba.Text)); */
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    finally
+                    {
+                        doc.Close();
+                    }
+                }
+            }
         }
     }
 }
