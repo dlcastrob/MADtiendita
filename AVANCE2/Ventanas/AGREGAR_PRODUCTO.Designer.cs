@@ -35,15 +35,15 @@ namespace AVANCE2
             this.label15 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.tbDesc = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbDepa = new System.Windows.Forms.ComboBox();
+            this.cbMedida = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
+            this.dtpAlta = new System.Windows.Forms.DateTimePicker();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvProducto = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,23 +53,23 @@ namespace AVANCE2
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.tbPorcentaje = new System.Windows.Forms.MaskedTextBox();
+            this.tbExistencia = new System.Windows.Forms.MaskedTextBox();
+            this.tbReorden = new System.Windows.Forms.MaskedTextBox();
+            this.tbCosto = new System.Windows.Forms.MaskedTextBox();
+            this.tbPrecio = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFinal = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dtpInicio = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.button4 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProducto)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -126,27 +126,27 @@ namespace AVANCE2
             this.tbDesc.Size = new System.Drawing.Size(155, 22);
             this.tbDesc.TabIndex = 1;
             // 
-            // comboBox1
+            // cbDepa
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(216, 122);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(154, 24);
-            this.comboBox1.TabIndex = 3;
+            this.cbDepa.FormattingEnabled = true;
+            this.cbDepa.Location = new System.Drawing.Point(216, 122);
+            this.cbDepa.Name = "cbDepa";
+            this.cbDepa.Size = new System.Drawing.Size(154, 24);
+            this.cbDepa.TabIndex = 3;
             // 
-            // comboBox2
+            // cbMedida
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cbMedida.FormattingEnabled = true;
+            this.cbMedida.Items.AddRange(new object[] {
             "Kilo",
             "Gramos",
             "Litro",
             "Metro"});
-            this.comboBox2.Location = new System.Drawing.Point(216, 176);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(154, 24);
-            this.comboBox2.TabIndex = 5;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            this.cbMedida.Location = new System.Drawing.Point(216, 176);
+            this.cbMedida.Name = "cbMedida";
+            this.cbMedida.Size = new System.Drawing.Size(154, 24);
+            this.cbMedida.TabIndex = 5;
+            this.cbMedida.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -175,30 +175,30 @@ namespace AVANCE2
             this.label3.TabIndex = 0;
             this.label3.Text = "Existencia";
             // 
-            // dateTimePicker1
+            // dtpAlta
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(544, 79);
-            this.dateTimePicker1.MaxDate = new System.DateTime(2022, 11, 21, 0, 0, 0, 0);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.ShowCheckBox = true;
-            this.dateTimePicker1.Size = new System.Drawing.Size(154, 22);
-            this.dateTimePicker1.TabIndex = 2;
-            this.dateTimePicker1.Value = new System.DateTime(2022, 11, 21, 0, 0, 0, 0);
+            this.dtpAlta.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpAlta.Location = new System.Drawing.Point(544, 79);
+            this.dtpAlta.MaxDate = new System.DateTime(2022, 11, 21, 0, 0, 0, 0);
+            this.dtpAlta.Name = "dtpAlta";
+            this.dtpAlta.ShowCheckBox = true;
+            this.dtpAlta.Size = new System.Drawing.Size(154, 22);
+            this.dtpAlta.TabIndex = 2;
+            this.dtpAlta.Value = new System.DateTime(2022, 11, 21, 0, 0, 0, 0);
             // 
-            // button1
+            // btnAgregar
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(282, 488);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(147, 49);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "+ Agregar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnAgregar.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAgregar.Location = new System.Drawing.Point(282, 488);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(147, 49);
+            this.btnAgregar.TabIndex = 10;
+            this.btnAgregar.Text = "+ Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.button1_Click);
             // 
             // label4
             // 
@@ -209,10 +209,10 @@ namespace AVANCE2
             this.label4.TabIndex = 0;
             this.label4.Text = "Porcentaje";
             // 
-            // dataGridView1
+            // dgvProducto
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProducto.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
@@ -222,15 +222,15 @@ namespace AVANCE2
             this.Column7,
             this.Column8,
             this.Column9});
-            this.dataGridView1.Location = new System.Drawing.Point(742, 59);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(965, 399);
-            this.dataGridView1.TabIndex = 11;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dgvProducto.Location = new System.Drawing.Point(742, 59);
+            this.dgvProducto.Name = "dgvProducto";
+            this.dgvProducto.ReadOnly = true;
+            this.dgvProducto.RowHeadersWidth = 51;
+            this.dgvProducto.RowTemplate.Height = 24;
+            this.dgvProducto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvProducto.Size = new System.Drawing.Size(965, 399);
+            this.dgvProducto.TabIndex = 11;
+            this.dgvProducto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Column1
             // 
@@ -304,88 +304,88 @@ namespace AVANCE2
             this.Column9.ReadOnly = true;
             this.Column9.Width = 80;
             // 
-            // button3
+            // btnEliminar
             // 
-            this.button3.Location = new System.Drawing.Point(883, 486);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(137, 48);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "Eliminar";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnEliminar.Location = new System.Drawing.Point(883, 486);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(137, 48);
+            this.btnEliminar.TabIndex = 13;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button2
+            // btnEditar
             // 
-            this.button2.Location = new System.Drawing.Point(740, 486);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(137, 48);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Editar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnEditar.Location = new System.Drawing.Point(740, 486);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(137, 48);
+            this.btnEditar.TabIndex = 12;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.button2_Click);
             // 
-            // maskedTextBox1
+            // tbPorcentaje
             // 
-            this.maskedTextBox1.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            this.maskedTextBox1.Location = new System.Drawing.Point(141, 35);
-            this.maskedTextBox1.Mask = "99999";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(155, 22);
-            this.maskedTextBox1.TabIndex = 8;
-            this.maskedTextBox1.ValidatingType = typeof(int);
-            this.maskedTextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
+            this.tbPorcentaje.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.tbPorcentaje.Location = new System.Drawing.Point(141, 35);
+            this.tbPorcentaje.Mask = "99999";
+            this.tbPorcentaje.Name = "tbPorcentaje";
+            this.tbPorcentaje.Size = new System.Drawing.Size(155, 22);
+            this.tbPorcentaje.TabIndex = 8;
+            this.tbPorcentaje.ValidatingType = typeof(int);
+            this.tbPorcentaje.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             // 
-            // maskedTextBox2
+            // tbExistencia
             // 
-            this.maskedTextBox2.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            this.maskedTextBox2.Location = new System.Drawing.Point(544, 127);
-            this.maskedTextBox2.Mask = "99999";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(155, 22);
-            this.maskedTextBox2.TabIndex = 4;
-            this.maskedTextBox2.ValidatingType = typeof(int);
+            this.tbExistencia.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.tbExistencia.Location = new System.Drawing.Point(544, 127);
+            this.tbExistencia.Mask = "99999";
+            this.tbExistencia.Name = "tbExistencia";
+            this.tbExistencia.Size = new System.Drawing.Size(155, 22);
+            this.tbExistencia.TabIndex = 4;
+            this.tbExistencia.ValidatingType = typeof(int);
             // 
-            // maskedTextBox3
+            // tbReorden
             // 
-            this.maskedTextBox3.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            this.maskedTextBox3.Location = new System.Drawing.Point(543, 181);
-            this.maskedTextBox3.Mask = "99999";
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(155, 22);
-            this.maskedTextBox3.TabIndex = 6;
-            this.maskedTextBox3.ValidatingType = typeof(int);
+            this.tbReorden.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.tbReorden.Location = new System.Drawing.Point(543, 181);
+            this.tbReorden.Mask = "99999";
+            this.tbReorden.Name = "tbReorden";
+            this.tbReorden.Size = new System.Drawing.Size(155, 22);
+            this.tbReorden.TabIndex = 6;
+            this.tbReorden.ValidatingType = typeof(int);
             // 
-            // maskedTextBox4
+            // tbCosto
             // 
-            this.maskedTextBox4.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            this.maskedTextBox4.Location = new System.Drawing.Point(214, 227);
-            this.maskedTextBox4.Mask = "99999";
-            this.maskedTextBox4.Name = "maskedTextBox4";
-            this.maskedTextBox4.Size = new System.Drawing.Size(155, 22);
-            this.maskedTextBox4.TabIndex = 7;
-            this.maskedTextBox4.ValidatingType = typeof(int);
-            this.maskedTextBox4.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox4_MaskInputRejected);
+            this.tbCosto.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.tbCosto.Location = new System.Drawing.Point(214, 227);
+            this.tbCosto.Mask = "99999";
+            this.tbCosto.Name = "tbCosto";
+            this.tbCosto.Size = new System.Drawing.Size(155, 22);
+            this.tbCosto.TabIndex = 7;
+            this.tbCosto.ValidatingType = typeof(int);
+            this.tbCosto.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox4_MaskInputRejected);
             // 
-            // maskedTextBox5
+            // tbPrecio
             // 
-            this.maskedTextBox5.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            this.maskedTextBox5.Location = new System.Drawing.Point(216, 275);
-            this.maskedTextBox5.Mask = "99999";
-            this.maskedTextBox5.Name = "maskedTextBox5";
-            this.maskedTextBox5.Size = new System.Drawing.Size(155, 22);
-            this.maskedTextBox5.TabIndex = 9;
-            this.maskedTextBox5.ValidatingType = typeof(int);
+            this.tbPrecio.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.tbPrecio.Location = new System.Drawing.Point(216, 275);
+            this.tbPrecio.Mask = "99999";
+            this.tbPrecio.Name = "tbPrecio";
+            this.tbPrecio.Size = new System.Drawing.Size(155, 22);
+            this.tbPrecio.TabIndex = 9;
+            this.tbPrecio.ValidatingType = typeof(int);
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.dateTimePicker3);
+            this.groupBox1.Controls.Add(this.dtpFinal);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.dateTimePicker2);
+            this.groupBox1.Controls.Add(this.dtpInicio);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.maskedTextBox1);
+            this.groupBox1.Controls.Add(this.tbPorcentaje);
             this.groupBox1.Location = new System.Drawing.Point(393, 226);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(320, 213);
@@ -402,14 +402,14 @@ namespace AVANCE2
             this.label8.TabIndex = 13;
             this.label8.Text = "Fecha final";
             // 
-            // dateTimePicker3
+            // dtpFinal
             // 
-            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker3.Location = new System.Drawing.Point(141, 171);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.ShowCheckBox = true;
-            this.dateTimePicker3.Size = new System.Drawing.Size(155, 22);
-            this.dateTimePicker3.TabIndex = 12;
+            this.dtpFinal.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFinal.Location = new System.Drawing.Point(141, 171);
+            this.dtpFinal.Name = "dtpFinal";
+            this.dtpFinal.ShowCheckBox = true;
+            this.dtpFinal.Size = new System.Drawing.Size(155, 22);
+            this.dtpFinal.TabIndex = 12;
             // 
             // label6
             // 
@@ -421,15 +421,15 @@ namespace AVANCE2
             this.label6.Text = "Fecha inicio";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // dateTimePicker2
+            // dtpInicio
             // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(141, 115);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.ShowCheckBox = true;
-            this.dateTimePicker2.Size = new System.Drawing.Size(155, 22);
-            this.dateTimePicker2.TabIndex = 10;
-            this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
+            this.dtpInicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpInicio.Location = new System.Drawing.Point(141, 115);
+            this.dtpInicio.Name = "dtpInicio";
+            this.dtpInicio.ShowCheckBox = true;
+            this.dtpInicio.Size = new System.Drawing.Size(155, 22);
+            this.dtpInicio.TabIndex = 10;
+            this.dtpInicio.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 
             // label5
             // 
@@ -471,20 +471,20 @@ namespace AVANCE2
             this.ClientSize = new System.Drawing.Size(1768, 581);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.maskedTextBox5);
-            this.Controls.Add(this.maskedTextBox4);
-            this.Controls.Add(this.maskedTextBox3);
-            this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.tbPrecio);
+            this.Controls.Add(this.tbCosto);
+            this.Controls.Add(this.tbReorden);
+            this.Controls.Add(this.tbExistencia);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.dgvProducto);
+            this.Controls.Add(this.btnAgregar);
+            this.Controls.Add(this.dtpAlta);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbMedida);
+            this.Controls.Add(this.cbDepa);
             this.Controls.Add(this.tbDesc);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label11);
@@ -494,7 +494,7 @@ namespace AVANCE2
             this.Controls.Add(this.groupBox1);
             this.Name = "AGREGAR_PRODUCTO";
             this.Text = "AGREGAR PRODUCTO";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProducto)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -510,17 +510,17 @@ namespace AVANCE2
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox tbDesc;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbDepa;
+        private System.Windows.Forms.ComboBox cbMedida;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DateTimePicker dtpAlta;
+        private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridView dgvProducto;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
         private System.Windows.Forms.DataGridViewTextBoxColumn Departamento;
@@ -530,18 +530,18 @@ namespace AVANCE2
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha_Alta;
         private System.Windows.Forms.DataGridViewTextBoxColumn Existencia;
         private System.Windows.Forms.DataGridViewTextBoxColumn Reorden;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox4;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox5;
+        private System.Windows.Forms.MaskedTextBox tbPorcentaje;
+        private System.Windows.Forms.MaskedTextBox tbExistencia;
+        private System.Windows.Forms.MaskedTextBox tbReorden;
+        private System.Windows.Forms.MaskedTextBox tbCosto;
+        private System.Windows.Forms.MaskedTextBox tbPrecio;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtpInicio;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.DateTimePicker dtpFinal;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
