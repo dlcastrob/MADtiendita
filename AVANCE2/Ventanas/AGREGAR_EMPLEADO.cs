@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using static AVANCE2.EnlaceDB;
 using static AVANCE2.FUNCIONES;
+using System.Net.Mail;
 
 namespace AVANCE2.Ventanas
 {
@@ -44,8 +45,12 @@ namespace AVANCE2.Ventanas
         private void button5_Click(object sender, EventArgs e)
         {
             conexion.Open();
-            string consulta = "insert into CAJERO values("+tbNombre.Text+ ",'" +tbPaterno+"'  )";
+            string consulta = "insert into CAJERO values("+tbNombre.Text+ ",'" +tbPaterno+ "','" + tbMaterno + "','" + tbCURP + "','" + dtpNacimiento + "','" + tbNumNomina + "','" + tbEmail + "','" + dtpAlta + "' )";
             llenar_tabla();
+            if (EsValidoEmail(tbEmail.Text) == true)
+            {
+
+            }
             limpiar_campos();
         }
 

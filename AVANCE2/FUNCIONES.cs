@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using System.Text.RegularExpressions;
 namespace AVANCE2
 {
    
-    public static class FUNCIONES
+    public class FUNCIONES
     {
 
         public static int GetLastDayOfMonth(string fecha)
@@ -20,6 +21,113 @@ namespace AVANCE2
             diasMes = DateTime.DaysInMonth(dateTime.Year, dateTime.Month);
             return diasMes;
         }
+
+
+        public static bool EsValidoEmail(string text)
+        {
+            int i = 0;
+
+            if (text.Length == 0)
+            {
+                return false;
+            }
+            while (i < text.Length)
+            {
+                if (text.ElementAt(0) == 64)
+                {
+                    return false;
+                }
+                if (text.ElementAt(0) == 45)
+                {
+                    return false;
+                }
+                if (text.ElementAt(0) == 46)
+                {
+                    return false;
+                }
+                if (text.ElementAt(0) == 95)
+                {
+                    return false;
+                }
+                if (text.ElementAt(text.Length - 1) == 46)
+                {
+                    return false;
+                }
+                if (text.ElementAt(text.Length - 1) == 64)
+                {
+                    return false;
+                }
+                if (text.ElementAt(i) == 64)
+                {
+                    i++;
+                    if (text.ElementAt(i) == 46)
+                    {
+                        return false;
+                    }
+                    while (i < text.Length)
+                    {
+                        if (text.ElementAt(i) == 46)
+                        {
+                            i++;
+                            if (text.ElementAt(i) == 46)
+                            {
+                                return false;
+                            }
+                            while (i < text.Length)
+                            {
+
+                                if (text.ElementAt(i) == 46)
+                                {
+                                    i++;
+                                    while (i < text.Length)
+                                    {
+                                        if ((text.ElementAt(i) < 97) || (text.ElementAt(i) > 122))
+                                        {
+                                            if ((text.ElementAt(i) < 65) || (text.ElementAt(i) > 90))
+                                            {
+                                                return false;
+                                            }
+                                        }
+                                        i++;
+                                    }
+                                    return true;
+                                }
+
+                                if ((text.ElementAt(i) < 97) || (text.ElementAt(i) > 122))
+                                {
+                                    if ((text.ElementAt(i) < 65) || (text.ElementAt(i) > 90))
+                                    {
+                                        return false;
+                                    }
+                                }
+                                i++;
+                            }
+                            return true;
+                        }
+
+                        if ((text.ElementAt(i) < 65) || (text.ElementAt(i) > 90))
+                        {
+                            if ((text.ElementAt(i) < 48) || (text.ElementAt(i) > 57))
+                            {
+                                if ((text.ElementAt(i) < 97) || (text.ElementAt(i) > 122))
+                                {
+                                    if (text.ElementAt(i) != 46)
+                                    {
+                                        return false;
+
+                                    }
+
+                                }
+                            }
+                        }
+                        i++;
+                    }
+                    return false;
+                }
+            }
+            return false;
+        }
+
 
         public static double getPorcentaje(double cantidad, double porcentaje) {
             double cantidadPorcentaje = cantidad * (porcentaje / 100);
