@@ -153,5 +153,20 @@ namespace AVANCE2.Ventanas
             tbContra.Text = dgvEmp.SelectedCells[12].Value.ToString();
 
         }
+
+        private void tbNumNomina_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void tbNumCuenta_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void tbNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

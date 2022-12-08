@@ -34,6 +34,10 @@ namespace AVANCE2
             this.lbtitulo = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.cbCaja = new System.Windows.Forms.ComboBox();
+            this.dtpAlta = new System.Windows.Forms.DateTimePicker();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button2
@@ -48,7 +52,7 @@ namespace AVANCE2
             // 
             // btnInventario
             // 
-            this.btnInventario.Location = new System.Drawing.Point(267, 183);
+            this.btnInventario.Location = new System.Drawing.Point(267, 263);
             this.btnInventario.Name = "btnInventario";
             this.btnInventario.Size = new System.Drawing.Size(242, 65);
             this.btnInventario.TabIndex = 2;
@@ -70,7 +74,7 @@ namespace AVANCE2
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(253, 107);
+            this.label1.Location = new System.Drawing.Point(253, 187);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(153, 17);
             this.label1.TabIndex = 0;
@@ -87,11 +91,51 @@ namespace AVANCE2
             "4",
             "5",
             "6"});
-            this.cbCaja.Location = new System.Drawing.Point(412, 104);
+            this.cbCaja.Location = new System.Drawing.Point(412, 184);
             this.cbCaja.Name = "cbCaja";
             this.cbCaja.Size = new System.Drawing.Size(121, 24);
             this.cbCaja.TabIndex = 1;
             this.cbCaja.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // dtpAlta
+            // 
+            this.dtpAlta.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpAlta.Location = new System.Drawing.Point(223, 107);
+            this.dtpAlta.MaxDate = new System.DateTime(2022, 11, 21, 0, 0, 0, 0);
+            this.dtpAlta.Name = "dtpAlta";
+            this.dtpAlta.ShowCheckBox = true;
+            this.dtpAlta.Size = new System.Drawing.Size(154, 22);
+            this.dtpAlta.TabIndex = 5;
+            this.dtpAlta.Value = new System.DateTime(2022, 11, 21, 0, 0, 0, 0);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(69, 107);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(94, 17);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Fecha de alta";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(596, 107);
+            this.dateTimePicker1.MaxDate = new System.DateTime(2022, 11, 21, 0, 0, 0, 0);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.ShowCheckBox = true;
+            this.dateTimePicker1.Size = new System.Drawing.Size(154, 22);
+            this.dateTimePicker1.TabIndex = 7;
+            this.dateTimePicker1.Value = new System.DateTime(2022, 11, 21, 0, 0, 0, 0);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(442, 107);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(94, 17);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Fecha de alta";
             // 
             // Form1
             // 
@@ -99,6 +143,10 @@ namespace AVANCE2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.dtpAlta);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.cbCaja);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
@@ -117,5 +165,9 @@ namespace AVANCE2
         private System.Windows.Forms.Label lbtitulo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbCaja;
+        private System.Windows.Forms.DateTimePicker dtpAlta;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label3;
     }
 }

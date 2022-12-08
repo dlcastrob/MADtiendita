@@ -114,7 +114,7 @@ namespace AVANCE2.Ventanas
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(735, 537);
+            this.btnEditar.Location = new System.Drawing.Point(736, 537);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(137, 48);
             this.btnEditar.TabIndex = 34;
@@ -125,7 +125,7 @@ namespace AVANCE2.Ventanas
             // dgvEmp
             // 
             this.dgvEmp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEmp.Location = new System.Drawing.Point(429, 84);
+            this.dgvEmp.Location = new System.Drawing.Point(418, 80);
             this.dgvEmp.Name = "dgvEmp";
             this.dgvEmp.ReadOnly = true;
             this.dgvEmp.RowHeadersWidth = 51;
@@ -266,6 +266,7 @@ namespace AVANCE2.Ventanas
             this.tbNombre.Name = "tbNombre";
             this.tbNombre.Size = new System.Drawing.Size(193, 22);
             this.tbNombre.TabIndex = 1;
+            this.tbNombre.TextChanged += new System.EventHandler(this.tbNombre_TextChanged);
             // 
             // label9
             // 
@@ -313,11 +314,12 @@ namespace AVANCE2.Ventanas
             this.tbNumNomina.BeepOnError = true;
             this.tbNumNomina.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             this.tbNumNomina.Location = new System.Drawing.Point(208, 235);
-            this.tbNumNomina.Mask = "99999";
+            this.tbNumNomina.Mask = "99999 99999 99999 99999";
             this.tbNumNomina.Name = "tbNumNomina";
             this.tbNumNomina.Size = new System.Drawing.Size(193, 22);
             this.tbNumNomina.TabIndex = 5;
             this.tbNumNomina.ValidatingType = typeof(int);
+            this.tbNumNomina.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.tbNumNomina_MaskInputRejected);
             // 
             // label13
             // 
@@ -333,11 +335,12 @@ namespace AVANCE2.Ventanas
             this.tbNumCuenta.BeepOnError = true;
             this.tbNumCuenta.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             this.tbNumCuenta.Location = new System.Drawing.Point(208, 276);
-            this.tbNumCuenta.Mask = "99999";
+            this.tbNumCuenta.Mask = "99999 99999 99999 99999";
             this.tbNumCuenta.Name = "tbNumCuenta";
             this.tbNumCuenta.Size = new System.Drawing.Size(193, 22);
             this.tbNumCuenta.TabIndex = 6;
             this.tbNumCuenta.ValidatingType = typeof(int);
+            this.tbNumCuenta.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.tbNumCuenta_MaskInputRejected);
             // 
             // label4
             // 
@@ -420,7 +423,7 @@ namespace AVANCE2.Ventanas
             this.tbCURP.BeepOnError = true;
             this.tbCURP.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             this.tbCURP.Location = new System.Drawing.Point(208, 351);
-            this.tbCURP.Mask = "AAAA-999999-AAA-AAA-AA";
+            this.tbCURP.Mask = "AAAA 999999 AAA AAA AA";
             this.tbCURP.Name = "tbCURP";
             this.tbCURP.Size = new System.Drawing.Size(193, 22);
             this.tbCURP.TabIndex = 8;
