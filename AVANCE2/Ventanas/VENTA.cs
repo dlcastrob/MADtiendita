@@ -96,22 +96,22 @@ namespace AVANCE2
                     {
                         doc.Open();
 
-                        PdfPTable table = new PdfPTable(dataGridView3.Columns.Count);
+                        PdfPTable table = new PdfPTable(dgvArticulosAgregados.Columns.Count);
 
-                        for (int j = 0; j < dataGridView3.Columns.Count; j++)
+                        for (int j = 0; j < dgvArticulosAgregados.Columns.Count; j++)
                         {
-                            table.AddCell(new Phrase(dataGridView3.Columns[j].HeaderText));
+                            table.AddCell(new Phrase(dgvArticulosAgregados.Columns[j].HeaderText));
                         }
 
                         table.HeaderRows = 1;
 
-                        for (int i = 0; i < dataGridView3.Rows.Count; i++)
+                        for (int i = 0; i < dgvArticulosAgregados.Rows.Count; i++)
                         {
-                            for (int k = 0; k < dataGridView3.Columns.Count; k++)
+                            for (int k = 0; k < dgvArticulosAgregados.Columns.Count; k++)
                             {
-                                if (dataGridView3[k, i].Value != null)
+                                if (dgvArticulosAgregados[k, i].Value != null)
                                 {
-                                    table.AddCell(new Phrase(dataGridView3[k, i].Value.ToString()));
+                                    table.AddCell(new Phrase(dgvArticulosAgregados[k, i].Value.ToString()));
                                 }
                             }
                         }

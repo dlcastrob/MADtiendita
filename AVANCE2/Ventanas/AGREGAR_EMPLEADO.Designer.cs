@@ -133,6 +133,7 @@ namespace AVANCE2.Ventanas
             this.dgvEmp.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvEmp.Size = new System.Drawing.Size(912, 399);
             this.dgvEmp.TabIndex = 33;
+            this.dgvEmp.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmp_CellClick);
             this.dgvEmp.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmp_CellContentClick);
             // 
             // button1
@@ -493,6 +494,7 @@ namespace AVANCE2.Ventanas
             this.Controls.Add(this.label7);
             this.Name = "AGREGAR_EMPLEADO";
             this.Text = "AGREGAR EMPLEADO";
+            this.Load += new System.EventHandler(this.AGREGAR_EMPLEADO_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmp)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

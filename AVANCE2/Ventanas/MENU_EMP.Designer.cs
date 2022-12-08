@@ -33,7 +33,7 @@ namespace AVANCE2
             this.btnInventario = new System.Windows.Forms.Button();
             this.lbtitulo = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbCaja = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // button2
@@ -77,21 +77,21 @@ namespace AVANCE2
             this.label1.Text = "Seleccione No. de caja";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // comboBox1
+            // cbCaja
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbCaja.FormattingEnabled = true;
+            this.cbCaja.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
             "4",
             "5",
             "6"});
-            this.comboBox1.Location = new System.Drawing.Point(412, 104);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 1;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cbCaja.Location = new System.Drawing.Point(412, 104);
+            this.cbCaja.Name = "cbCaja";
+            this.cbCaja.Size = new System.Drawing.Size(121, 24);
+            this.cbCaja.TabIndex = 1;
+            this.cbCaja.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // Form1
             // 
@@ -99,7 +99,7 @@ namespace AVANCE2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbCaja);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnInventario);
@@ -116,6 +116,6 @@ namespace AVANCE2
         private System.Windows.Forms.Button btnInventario;
         private System.Windows.Forms.Label lbtitulo;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbCaja;
     }
 }
