@@ -31,38 +31,38 @@ namespace AVANCE2
         {
             this.components = new System.ComponentModel.Container();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbTotal = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cbPago = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dgvProductos = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbProducto = new System.Windows.Forms.TextBox();
+            this.tbCodigoP = new System.Windows.Forms.MaskedTextBox();
+            this.tbEmpleado = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tbCaja = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.tbNumArticulo = new System.Windows.Forms.MaskedTextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.Cantidad = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvArticulos = new System.Windows.Forms.DataGridView();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.tbBuscaProducto = new System.Windows.Forms.TextBox();
+            this.dgvArticulosAgregados = new System.Windows.Forms.DataGridView();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -72,22 +72,21 @@ namespace AVANCE2
             this.label12 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnGenerarRecibo = new System.Windows.Forms.Button();
+            this.btnPagar = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tbMonto = new System.Windows.Forms.MaskedTextBox();
+            this.btnEliminarArticulo = new System.Windows.Forms.Button();
+            this.tbSubtotal = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.tbPrueba = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cantidad)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvArticulosAgregados)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -101,14 +100,14 @@ namespace AVANCE2
             this.label2.TabIndex = 0;
             this.label2.Text = "Total";
             // 
-            // textBox1
+            // tbTotal
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(467, 394);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(118, 22);
-            this.textBox1.TabIndex = 5;
+            this.tbTotal.Enabled = false;
+            this.tbTotal.Location = new System.Drawing.Point(467, 394);
+            this.tbTotal.Name = "tbTotal";
+            this.tbTotal.ReadOnly = true;
+            this.tbTotal.Size = new System.Drawing.Size(118, 22);
+            this.tbTotal.TabIndex = 5;
             // 
             // label3
             // 
@@ -119,19 +118,19 @@ namespace AVANCE2
             this.label3.TabIndex = 0;
             this.label3.Text = "Nombre del empleado";
             // 
-            // comboBox3
+            // cbPago
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.cbPago.FormattingEnabled = true;
+            this.cbPago.Items.AddRange(new object[] {
             "Efectivo",
             "Tarjeta de debito",
             "Credito",
             "Cheque",
             "Vale de despensa"});
-            this.comboBox3.Location = new System.Drawing.Point(171, 493);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(154, 24);
-            this.comboBox3.TabIndex = 3;
+            this.cbPago.Location = new System.Drawing.Point(171, 493);
+            this.cbPago.Name = "cbPago";
+            this.cbPago.Size = new System.Drawing.Size(154, 24);
+            this.cbPago.TabIndex = 3;
             // 
             // label4
             // 
@@ -156,21 +155,21 @@ namespace AVANCE2
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // dataGridView2
+            // dgvProductos
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProductos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dataGridView2.Location = new System.Drawing.Point(21, 169);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(428, 466);
-            this.dataGridView2.TabIndex = 7;
+            this.dgvProductos.Location = new System.Drawing.Point(21, 169);
+            this.dgvProductos.Name = "dgvProductos";
+            this.dgvProductos.ReadOnly = true;
+            this.dgvProductos.RowHeadersWidth = 51;
+            this.dgvProductos.RowTemplate.Height = 24;
+            this.dgvProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvProductos.Size = new System.Drawing.Size(428, 466);
+            this.dgvProductos.TabIndex = 7;
             // 
             // Column1
             // 
@@ -200,9 +199,9 @@ namespace AVANCE2
             // 
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.maskedTextBox1);
-            this.groupBox1.Controls.Add(this.dataGridView2);
+            this.groupBox1.Controls.Add(this.tbProducto);
+            this.groupBox1.Controls.Add(this.tbCodigoP);
+            this.groupBox1.Controls.Add(this.dgvProductos);
             this.groupBox1.Location = new System.Drawing.Point(47, 84);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(462, 653);
@@ -228,29 +227,29 @@ namespace AVANCE2
             this.label5.TabIndex = 10;
             this.label5.Text = "Codigo producto";
             // 
-            // textBox2
+            // tbProducto
             // 
-            this.textBox2.Location = new System.Drawing.Point(167, 104);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(206, 22);
-            this.textBox2.TabIndex = 9;
+            this.tbProducto.Location = new System.Drawing.Point(167, 104);
+            this.tbProducto.Name = "tbProducto";
+            this.tbProducto.Size = new System.Drawing.Size(206, 22);
+            this.tbProducto.TabIndex = 9;
             // 
-            // maskedTextBox1
+            // tbCodigoP
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(167, 65);
-            this.maskedTextBox1.Mask = "99999";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(206, 22);
-            this.maskedTextBox1.TabIndex = 8;
-            this.maskedTextBox1.ValidatingType = typeof(int);
+            this.tbCodigoP.Location = new System.Drawing.Point(167, 65);
+            this.tbCodigoP.Mask = "99999";
+            this.tbCodigoP.Name = "tbCodigoP";
+            this.tbCodigoP.Size = new System.Drawing.Size(206, 22);
+            this.tbCodigoP.TabIndex = 8;
+            this.tbCodigoP.ValidatingType = typeof(int);
             // 
-            // textBox3
+            // tbEmpleado
             // 
-            this.textBox3.Location = new System.Drawing.Point(197, 36);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(293, 22);
-            this.textBox3.TabIndex = 10;
+            this.tbEmpleado.Location = new System.Drawing.Point(197, 36);
+            this.tbEmpleado.Name = "tbEmpleado";
+            this.tbEmpleado.ReadOnly = true;
+            this.tbEmpleado.Size = new System.Drawing.Size(293, 22);
+            this.tbEmpleado.TabIndex = 10;
             // 
             // label7
             // 
@@ -262,13 +261,13 @@ namespace AVANCE2
             this.label7.Text = "Fecha";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // textBox5
+            // tbCaja
             // 
-            this.textBox5.Location = new System.Drawing.Point(1032, 36);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(293, 22);
-            this.textBox5.TabIndex = 14;
+            this.tbCaja.Location = new System.Drawing.Point(1032, 36);
+            this.tbCaja.Name = "tbCaja";
+            this.tbCaja.ReadOnly = true;
+            this.tbCaja.Size = new System.Drawing.Size(293, 22);
+            this.tbCaja.TabIndex = 14;
             // 
             // label8
             // 
@@ -279,14 +278,14 @@ namespace AVANCE2
             this.label8.TabIndex = 13;
             this.label8.Text = "No. caja";
             // 
-            // maskedTextBox2
+            // tbNumArticulo
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(167, 38);
-            this.maskedTextBox2.Mask = "99999";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(135, 22);
-            this.maskedTextBox2.TabIndex = 15;
-            this.maskedTextBox2.ValidatingType = typeof(int);
+            this.tbNumArticulo.Location = new System.Drawing.Point(167, 38);
+            this.tbNumArticulo.Mask = "99999";
+            this.tbNumArticulo.Name = "tbNumArticulo";
+            this.tbNumArticulo.Size = new System.Drawing.Size(135, 22);
+            this.tbNumArticulo.TabIndex = 15;
+            this.tbNumArticulo.ValidatingType = typeof(int);
             // 
             // label9
             // 
@@ -297,13 +296,13 @@ namespace AVANCE2
             this.label9.TabIndex = 16;
             this.label9.Text = "Numero de artículo";
             // 
-            // numericUpDown1
+            // Cantidad
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(700, 170);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(135, 22);
-            this.numericUpDown1.TabIndex = 17;
-            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            this.Cantidad.Location = new System.Drawing.Point(700, 170);
+            this.Cantidad.Name = "Cantidad";
+            this.Cantidad.Size = new System.Drawing.Size(135, 22);
+            this.Cantidad.TabIndex = 17;
+            this.Cantidad.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
             // label10
             // 
@@ -318,7 +317,7 @@ namespace AVANCE2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.maskedTextBox2);
+            this.groupBox2.Controls.Add(this.tbNumArticulo);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.groupBox3);
             this.groupBox2.Location = new System.Drawing.Point(533, 92);
@@ -331,10 +330,10 @@ namespace AVANCE2
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.button4);
+            this.groupBox3.Controls.Add(this.btnAgregar);
             this.groupBox3.Controls.Add(this.label1);
-            this.groupBox3.Controls.Add(this.dataGridView1);
-            this.groupBox3.Controls.Add(this.textBox6);
+            this.groupBox3.Controls.Add(this.dgvArticulos);
+            this.groupBox3.Controls.Add(this.tbBuscaProducto);
             this.groupBox3.Location = new System.Drawing.Point(16, 161);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(422, 466);
@@ -342,18 +341,18 @@ namespace AVANCE2
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Buscar producto";
             // 
-            // button4
+            // btnAgregar
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button4.Location = new System.Drawing.Point(110, 404);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(115, 44);
-            this.button4.TabIndex = 30;
-            this.button4.Text = "+ Agregar";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnAgregar.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnAgregar.Location = new System.Drawing.Point(110, 404);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(115, 44);
+            this.btnAgregar.TabIndex = 30;
+            this.btnAgregar.Text = "+ Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -366,21 +365,21 @@ namespace AVANCE2
             this.label1.Text = "Nombre producto";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // dataGridView1
+            // dgvArticulos
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvArticulos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column4,
             this.Column9,
             this.Column10});
-            this.dataGridView1.Location = new System.Drawing.Point(11, 79);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(405, 310);
-            this.dataGridView1.TabIndex = 4;
+            this.dgvArticulos.Location = new System.Drawing.Point(11, 79);
+            this.dgvArticulos.Name = "dgvArticulos";
+            this.dgvArticulos.ReadOnly = true;
+            this.dgvArticulos.RowHeadersWidth = 51;
+            this.dgvArticulos.RowTemplate.Height = 24;
+            this.dgvArticulos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvArticulos.Size = new System.Drawing.Size(405, 310);
+            this.dgvArticulos.TabIndex = 4;
             // 
             // Column4
             // 
@@ -406,30 +405,30 @@ namespace AVANCE2
             this.Column10.ReadOnly = true;
             this.Column10.Width = 80;
             // 
-            // textBox6
+            // tbBuscaProducto
             // 
-            this.textBox6.Location = new System.Drawing.Point(151, 48);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(184, 22);
-            this.textBox6.TabIndex = 12;
+            this.tbBuscaProducto.Location = new System.Drawing.Point(151, 48);
+            this.tbBuscaProducto.Name = "tbBuscaProducto";
+            this.tbBuscaProducto.Size = new System.Drawing.Size(184, 22);
+            this.tbBuscaProducto.TabIndex = 12;
             // 
-            // dataGridView3
+            // dgvArticulosAgregados
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvArticulosAgregados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvArticulosAgregados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column8,
             this.dataGridViewTextBoxColumn1,
             this.Column5,
             this.Column6,
             this.Column7});
-            this.dataGridView3.Location = new System.Drawing.Point(35, 38);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowHeadersWidth = 51;
-            this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView3.Size = new System.Drawing.Size(557, 299);
-            this.dataGridView3.TabIndex = 5;
-            this.dataGridView3.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
+            this.dgvArticulosAgregados.Location = new System.Drawing.Point(35, 38);
+            this.dgvArticulosAgregados.Name = "dgvArticulosAgregados";
+            this.dgvArticulosAgregados.RowHeadersWidth = 51;
+            this.dgvArticulosAgregados.RowTemplate.Height = 24;
+            this.dgvArticulosAgregados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvArticulosAgregados.Size = new System.Drawing.Size(557, 299);
+            this.dgvArticulosAgregados.TabIndex = 5;
+            this.dgvArticulosAgregados.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
             // 
             // Column8
             // 
@@ -499,17 +498,17 @@ namespace AVANCE2
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.button7);
-            this.groupBox4.Controls.Add(this.button5);
+            this.groupBox4.Controls.Add(this.btnGenerarRecibo);
+            this.groupBox4.Controls.Add(this.btnPagar);
             this.groupBox4.Controls.Add(this.label14);
-            this.groupBox4.Controls.Add(this.maskedTextBox3);
-            this.groupBox4.Controls.Add(this.button6);
-            this.groupBox4.Controls.Add(this.textBox4);
+            this.groupBox4.Controls.Add(this.tbMonto);
+            this.groupBox4.Controls.Add(this.btnEliminarArticulo);
+            this.groupBox4.Controls.Add(this.tbSubtotal);
             this.groupBox4.Controls.Add(this.label13);
-            this.groupBox4.Controls.Add(this.dataGridView3);
-            this.groupBox4.Controls.Add(this.textBox1);
+            this.groupBox4.Controls.Add(this.dgvArticulosAgregados);
+            this.groupBox4.Controls.Add(this.tbTotal);
             this.groupBox4.Controls.Add(this.label2);
-            this.groupBox4.Controls.Add(this.comboBox3);
+            this.groupBox4.Controls.Add(this.cbPago);
             this.groupBox4.Controls.Add(this.label4);
             this.groupBox4.Location = new System.Drawing.Point(1000, 92);
             this.groupBox4.Name = "groupBox4";
@@ -518,32 +517,32 @@ namespace AVANCE2
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Lista de artículos agregados";
             // 
-            // button7
+            // btnGenerarRecibo
             // 
-            this.button7.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button7.Location = new System.Drawing.Point(470, 565);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(115, 62);
-            this.button7.TabIndex = 29;
-            this.button7.Text = "Generar recibo";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.btnGenerarRecibo.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnGenerarRecibo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerarRecibo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerarRecibo.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnGenerarRecibo.Location = new System.Drawing.Point(470, 565);
+            this.btnGenerarRecibo.Name = "btnGenerarRecibo";
+            this.btnGenerarRecibo.Size = new System.Drawing.Size(115, 62);
+            this.btnGenerarRecibo.TabIndex = 29;
+            this.btnGenerarRecibo.Text = "Generar recibo";
+            this.btnGenerarRecibo.UseVisualStyleBackColor = false;
+            this.btnGenerarRecibo.Click += new System.EventHandler(this.button7_Click);
             // 
-            // button5
+            // btnPagar
             // 
-            this.button5.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button5.Location = new System.Drawing.Point(210, 583);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(115, 44);
-            this.button5.TabIndex = 28;
-            this.button5.Text = "Pagar";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnPagar.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnPagar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPagar.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnPagar.Location = new System.Drawing.Point(210, 583);
+            this.btnPagar.Name = "btnPagar";
+            this.btnPagar.Size = new System.Drawing.Size(115, 44);
+            this.btnPagar.TabIndex = 28;
+            this.btnPagar.Text = "Pagar";
+            this.btnPagar.UseVisualStyleBackColor = false;
             // 
             // label14
             // 
@@ -554,33 +553,33 @@ namespace AVANCE2
             this.label14.TabIndex = 27;
             this.label14.Text = "Monto";
             // 
-            // maskedTextBox3
+            // tbMonto
             // 
-            this.maskedTextBox3.Location = new System.Drawing.Point(171, 536);
-            this.maskedTextBox3.Mask = "99999";
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(154, 22);
-            this.maskedTextBox3.TabIndex = 26;
-            this.maskedTextBox3.ValidatingType = typeof(int);
+            this.tbMonto.Location = new System.Drawing.Point(171, 536);
+            this.tbMonto.Mask = "99999";
+            this.tbMonto.Name = "tbMonto";
+            this.tbMonto.Size = new System.Drawing.Size(154, 22);
+            this.tbMonto.TabIndex = 26;
+            this.tbMonto.ValidatingType = typeof(int);
             // 
-            // button6
+            // btnEliminarArticulo
             // 
-            this.button6.Location = new System.Drawing.Point(35, 343);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(115, 44);
-            this.button6.TabIndex = 25;
-            this.button6.Text = "Eliminar producto";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnEliminarArticulo.Location = new System.Drawing.Point(35, 343);
+            this.btnEliminarArticulo.Name = "btnEliminarArticulo";
+            this.btnEliminarArticulo.Size = new System.Drawing.Size(115, 44);
+            this.btnEliminarArticulo.TabIndex = 25;
+            this.btnEliminarArticulo.Text = "Eliminar producto";
+            this.btnEliminarArticulo.UseVisualStyleBackColor = true;
             // 
-            // textBox4
+            // tbSubtotal
             // 
-            this.textBox4.Enabled = false;
-            this.textBox4.Location = new System.Drawing.Point(467, 353);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(118, 22);
-            this.textBox4.TabIndex = 7;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.tbSubtotal.Enabled = false;
+            this.tbSubtotal.Location = new System.Drawing.Point(467, 353);
+            this.tbSubtotal.Name = "tbSubtotal";
+            this.tbSubtotal.ReadOnly = true;
+            this.tbSubtotal.Size = new System.Drawing.Size(118, 22);
+            this.tbSubtotal.TabIndex = 7;
+            this.tbSubtotal.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // label13
             // 
@@ -602,27 +601,19 @@ namespace AVANCE2
             this.label15.TabIndex = 22;
             this.label15.Text = "Realice una venta";
             // 
-            // tbPrueba
-            // 
-            this.tbPrueba.Location = new System.Drawing.Point(826, 17);
-            this.tbPrueba.Name = "tbPrueba";
-            this.tbPrueba.Size = new System.Drawing.Size(100, 22);
-            this.tbPrueba.TabIndex = 23;
-            // 
             // VENTA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1601, 740);
-            this.Controls.Add(this.tbPrueba);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.Cantidad);
+            this.Controls.Add(this.tbCaja);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.tbEmpleado);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox1);
@@ -631,16 +622,16 @@ namespace AVANCE2
             this.Name = "VENTA";
             this.Text = "VENTA";
             this.Load += new System.EventHandler(this.VENTA_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cantidad)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvArticulosAgregados)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
@@ -650,31 +641,31 @@ namespace AVANCE2
 
         #endregion
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbTotal;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cbPago;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dgvProductos;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbProducto;
+        private System.Windows.Forms.MaskedTextBox tbCodigoP;
+        private System.Windows.Forms.TextBox tbEmpleado;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tbCaja;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.MaskedTextBox tbNumArticulo;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown Cantidad;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView dgvArticulos;
+        private System.Windows.Forms.TextBox tbBuscaProducto;
+        private System.Windows.Forms.DataGridView dgvArticulosAgregados;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Timer timer1;
@@ -687,18 +678,17 @@ namespace AVANCE2
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tbSubtotal;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnPagar;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.MaskedTextBox tbMonto;
+        private System.Windows.Forms.Button btnEliminarArticulo;
+        private System.Windows.Forms.Button btnGenerarRecibo;
+        private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
-        private System.Windows.Forms.TextBox tbPrueba;
     }
 }

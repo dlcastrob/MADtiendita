@@ -29,7 +29,7 @@ namespace AVANCE2
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvReportedeVentas = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,23 +40,23 @@ namespace AVANCE2
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.cbCaja = new System.Windows.Forms.ComboBox();
+            this.dtpInicio = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFinal = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbDepa = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReportedeVentas)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvReportedeVentas
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvReportedeVentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvReportedeVentas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
@@ -66,14 +66,14 @@ namespace AVANCE2
             this.Column7,
             this.Column8,
             this.Column9});
-            this.dataGridView1.Location = new System.Drawing.Point(53, 165);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1208, 337);
-            this.dataGridView1.TabIndex = 3;
+            this.dgvReportedeVentas.Location = new System.Drawing.Point(53, 165);
+            this.dgvReportedeVentas.Name = "dgvReportedeVentas";
+            this.dgvReportedeVentas.ReadOnly = true;
+            this.dgvReportedeVentas.RowHeadersWidth = 51;
+            this.dgvReportedeVentas.RowTemplate.Height = 24;
+            this.dgvReportedeVentas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvReportedeVentas.Size = new System.Drawing.Size(1208, 337);
+            this.dgvReportedeVentas.TabIndex = 3;
             // 
             // Column1
             // 
@@ -157,22 +157,22 @@ namespace AVANCE2
             this.label7.Text = "Cajas";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // comboBox1
+            // cbCaja
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbCaja.FormattingEnabled = true;
+            this.cbCaja.Items.AddRange(new object[] {
             "Todas"});
-            this.comboBox1.Location = new System.Drawing.Point(163, 68);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 1;
+            this.cbCaja.Location = new System.Drawing.Point(163, 68);
+            this.cbCaja.Name = "cbCaja";
+            this.cbCaja.Size = new System.Drawing.Size(121, 24);
+            this.cbCaja.TabIndex = 1;
             // 
-            // dateTimePicker1
+            // dtpInicio
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(163, 40);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker1.TabIndex = 2;
+            this.dtpInicio.Location = new System.Drawing.Point(163, 40);
+            this.dtpInicio.Name = "dtpInicio";
+            this.dtpInicio.Size = new System.Drawing.Size(200, 22);
+            this.dtpInicio.TabIndex = 2;
             // 
             // label1
             // 
@@ -193,12 +193,12 @@ namespace AVANCE2
             this.label2.TabIndex = 5;
             this.label2.Text = "Fecha final";
             // 
-            // dateTimePicker2
+            // dtpFinal
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(516, 40);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker2.TabIndex = 6;
+            this.dtpFinal.Location = new System.Drawing.Point(516, 40);
+            this.dtpFinal.Name = "dtpFinal";
+            this.dtpFinal.Size = new System.Drawing.Size(200, 22);
+            this.dtpFinal.TabIndex = 6;
             // 
             // label3
             // 
@@ -210,16 +210,16 @@ namespace AVANCE2
             this.label3.Text = "a";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // comboBox2
+            // cbDepa
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cbDepa.FormattingEnabled = true;
+            this.cbDepa.Items.AddRange(new object[] {
             "Todas"});
-            this.comboBox2.Location = new System.Drawing.Point(163, 99);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 24);
-            this.comboBox2.TabIndex = 9;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            this.cbDepa.Location = new System.Drawing.Point(163, 99);
+            this.cbDepa.Name = "cbDepa";
+            this.cbDepa.Size = new System.Drawing.Size(121, 24);
+            this.cbDepa.TabIndex = 9;
+            this.cbDepa.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -260,20 +260,20 @@ namespace AVANCE2
             this.ClientSize = new System.Drawing.Size(1355, 596);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cbDepa);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.dtpFinal);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.dtpInicio);
+            this.Controls.Add(this.cbCaja);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvReportedeVentas);
             this.Name = "REPORTE_DE_VENTAS";
             this.Text = "REPORTE DE VENTAS";
             this.Load += new System.EventHandler(this.REPORTE_DE_VENTAS_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReportedeVentas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -281,15 +281,15 @@ namespace AVANCE2
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvReportedeVentas;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ComboBox cbCaja;
+        private System.Windows.Forms.DateTimePicker dtpInicio;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtpFinal;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbDepa;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;

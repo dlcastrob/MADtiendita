@@ -29,45 +29,45 @@ namespace AVANCE2
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtgReporteCajero = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbDepa = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFinal = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.dtpInicio = new System.Windows.Forms.DateTimePicker();
+            this.cbCaja = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgReporteCajero)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dtgReporteCajero
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dtgReporteCajero.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgReporteCajero.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4,
             this.Column5,
             this.Column6});
-            this.dataGridView1.Location = new System.Drawing.Point(64, 153);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(866, 337);
-            this.dataGridView1.TabIndex = 9;
+            this.dtgReporteCajero.Location = new System.Drawing.Point(64, 153);
+            this.dtgReporteCajero.Name = "dtgReporteCajero";
+            this.dtgReporteCajero.ReadOnly = true;
+            this.dtgReporteCajero.RowHeadersWidth = 51;
+            this.dtgReporteCajero.RowTemplate.Height = 24;
+            this.dtgReporteCajero.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgReporteCajero.Size = new System.Drawing.Size(866, 337);
+            this.dtgReporteCajero.TabIndex = 9;
             // 
             // Column1
             // 
@@ -117,15 +117,15 @@ namespace AVANCE2
             this.Column6.ReadOnly = true;
             this.Column6.Width = 125;
             // 
-            // comboBox2
+            // cbDepa
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cbDepa.FormattingEnabled = true;
+            this.cbDepa.Items.AddRange(new object[] {
             "Todas"});
-            this.comboBox2.Location = new System.Drawing.Point(172, 106);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 24);
-            this.comboBox2.TabIndex = 19;
+            this.cbDepa.Location = new System.Drawing.Point(172, 106);
+            this.cbDepa.Name = "cbDepa";
+            this.cbDepa.Size = new System.Drawing.Size(121, 24);
+            this.cbDepa.TabIndex = 19;
             // 
             // label4
             // 
@@ -154,12 +154,12 @@ namespace AVANCE2
             this.label2.TabIndex = 15;
             this.label2.Text = "Fecha final";
             // 
-            // dateTimePicker2
+            // dtpFinal
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(485, 47);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker2.TabIndex = 16;
+            this.dtpFinal.Location = new System.Drawing.Point(485, 47);
+            this.dtpFinal.Name = "dtpFinal";
+            this.dtpFinal.Size = new System.Drawing.Size(200, 22);
+            this.dtpFinal.TabIndex = 16;
             // 
             // label1
             // 
@@ -170,22 +170,22 @@ namespace AVANCE2
             this.label1.TabIndex = 11;
             this.label1.Text = "Fecha inicio";
             // 
-            // dateTimePicker1
+            // dtpInicio
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(148, 47);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker1.TabIndex = 14;
+            this.dtpInicio.Location = new System.Drawing.Point(148, 47);
+            this.dtpInicio.Name = "dtpInicio";
+            this.dtpInicio.Size = new System.Drawing.Size(200, 22);
+            this.dtpInicio.TabIndex = 14;
             // 
-            // comboBox1
+            // cbCaja
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbCaja.FormattingEnabled = true;
+            this.cbCaja.Items.AddRange(new object[] {
             "Todas"});
-            this.comboBox1.Location = new System.Drawing.Point(172, 75);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 13;
+            this.cbCaja.Location = new System.Drawing.Point(172, 75);
+            this.cbCaja.Name = "cbCaja";
+            this.cbCaja.Size = new System.Drawing.Size(121, 24);
+            this.cbCaja.TabIndex = 13;
             // 
             // label7
             // 
@@ -225,34 +225,34 @@ namespace AVANCE2
             this.ClientSize = new System.Drawing.Size(1014, 625);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cbDepa);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.dtpFinal);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.dtpInicio);
+            this.Controls.Add(this.cbCaja);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtgReporteCajero);
             this.Name = "REPORTE_CAJERO";
             this.Text = "REPORTE DE CAJERO";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgReporteCajero)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.DataGridView dtgReporteCajero;
+        private System.Windows.Forms.ComboBox cbDepa;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtpFinal;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.DateTimePicker dtpInicio;
+        private System.Windows.Forms.ComboBox cbCaja;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;

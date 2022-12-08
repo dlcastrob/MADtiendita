@@ -12,6 +12,7 @@ namespace AVANCE2
 {
     public partial class AGREGAR_PRODUCTO : Form
     {
+        private int n = 0;
         public AGREGAR_PRODUCTO()
         {
             InitializeComponent();
@@ -36,17 +37,29 @@ namespace AVANCE2
         {
 
         }
-
+        //EDITAR
         private void button2_Click(object sender, EventArgs e)
         {
-
+            DataGridViewRow nuevorenglon = dgvProducto.Rows[n];
+            nuevorenglon.Cells[2].Value = tbDesc.Text;
+            nuevorenglon.Cells[3].Value = cbDepa.Text;
+            nuevorenglon.Cells[4].Value = cbMedida.Text;
+            nuevorenglon.Cells[5].Value = tbCosto.Text;
+            nuevorenglon.Cells[6].Value = tbPrecio.Text;
+            nuevorenglon.Cells[7].Value = dtpAlta.Text;
+            nuevorenglon.Cells[8].Value = tbExistencia.Text;
+            nuevorenglon.Cells[9].Value = tbReorden.Text;
         }
-
+        //ELIMINAR
         private void button3_Click(object sender, EventArgs e)
         {
-
+            if (n >= 0)
+            {
+                dgvProducto.Rows.RemoveAt(n);
+                MessageBox.Show("SE HAN ACTUALIZADO LOS DATOS", "Se ha eliminado con exito!!!", MessageBoxButtons.OK);
+            }
         }
-
+        //AGREGAR
         private void button1_Click(object sender, EventArgs e)
         {
 

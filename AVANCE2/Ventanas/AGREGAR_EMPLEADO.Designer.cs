@@ -31,12 +31,12 @@ namespace AVANCE2.Ventanas
         {
             this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tbNumEmpleado = new System.Windows.Forms.MaskedTextBox();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.dgvEmp = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpNacimiento = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -47,28 +47,28 @@ namespace AVANCE2.Ventanas
             this.label21 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnAtras = new System.Windows.Forms.Button();
+            this.tbNombre = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.maskedTextBox6 = new System.Windows.Forms.MaskedTextBox();
+            this.tbPaterno = new System.Windows.Forms.TextBox();
+            this.tbMaterno = new System.Windows.Forms.TextBox();
+            this.tbNumNomina = new System.Windows.Forms.MaskedTextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.tbNumCuenta = new System.Windows.Forms.MaskedTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tbEmail = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dtpAlta = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.tbContra = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.tbCURP = new System.Windows.Forms.MaskedTextBox();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmp)).BeginInit();
             this.SuspendLayout();
             // 
             // maskedTextBox5
@@ -91,46 +91,50 @@ namespace AVANCE2.Ventanas
             this.maskedTextBox4.TabIndex = 30;
             this.maskedTextBox4.ValidatingType = typeof(int);
             // 
-            // maskedTextBox3
+            // tbNumEmpleado
             // 
-            this.maskedTextBox3.BeepOnError = true;
-            this.maskedTextBox3.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            this.maskedTextBox3.Location = new System.Drawing.Point(208, 196);
-            this.maskedTextBox3.Mask = "99999";
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(193, 22);
-            this.maskedTextBox3.TabIndex = 4;
-            this.maskedTextBox3.ValidatingType = typeof(int);
+            this.tbNumEmpleado.BeepOnError = true;
+            this.tbNumEmpleado.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.tbNumEmpleado.Location = new System.Drawing.Point(208, 196);
+            this.tbNumEmpleado.Mask = "99999";
+            this.tbNumEmpleado.Name = "tbNumEmpleado";
+            this.tbNumEmpleado.Size = new System.Drawing.Size(193, 22);
+            this.tbNumEmpleado.TabIndex = 4;
+            this.tbNumEmpleado.ValidatingType = typeof(int);
             // 
-            // button3
+            // btnEliminar
             // 
-            this.button3.Location = new System.Drawing.Point(927, 537);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(137, 48);
-            this.button3.TabIndex = 35;
-            this.button3.Text = "Eliminar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnEliminar.Location = new System.Drawing.Point(927, 537);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(137, 48);
+            this.btnEliminar.TabIndex = 35;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // button2
+            // btnEditar
             // 
-            this.button2.Location = new System.Drawing.Point(735, 537);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(137, 48);
-            this.button2.TabIndex = 34;
-            this.button2.Text = "Editar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnEditar.Location = new System.Drawing.Point(735, 537);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(137, 48);
+            this.btnEditar.TabIndex = 34;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
-            // dataGridView1
+            // dgvEmp
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(429, 84);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(912, 399);
-            this.dataGridView1.TabIndex = 33;
+            this.dgvEmp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEmp.Location = new System.Drawing.Point(429, 84);
+            this.dgvEmp.Name = "dgvEmp";
+            this.dgvEmp.ReadOnly = true;
+            this.dgvEmp.RowHeadersWidth = 51;
+            this.dgvEmp.RowTemplate.Height = 24;
+            this.dgvEmp.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvEmp.Size = new System.Drawing.Size(912, 399);
+            this.dgvEmp.TabIndex = 33;
+            this.dgvEmp.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmp_CellClick);
+            this.dgvEmp.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmp_CellContentClick);
             // 
             // button1
             // 
@@ -141,16 +145,16 @@ namespace AVANCE2.Ventanas
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker1
+            // dtpNacimiento
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(208, 314);
-            this.dateTimePicker1.MaxDate = new System.DateTime(2022, 11, 21, 0, 0, 0, 0);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.ShowCheckBox = true;
-            this.dateTimePicker1.Size = new System.Drawing.Size(192, 22);
-            this.dateTimePicker1.TabIndex = 7;
-            this.dateTimePicker1.Value = new System.DateTime(2022, 11, 21, 0, 0, 0, 0);
+            this.dtpNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNacimiento.Location = new System.Drawing.Point(208, 314);
+            this.dtpNacimiento.MaxDate = new System.DateTime(2022, 11, 21, 0, 0, 0, 0);
+            this.dtpNacimiento.Name = "dtpNacimiento";
+            this.dtpNacimiento.ShowCheckBox = true;
+            this.dtpNacimiento.Size = new System.Drawing.Size(192, 22);
+            this.dtpNacimiento.TabIndex = 7;
+            this.dtpNacimiento.Value = new System.DateTime(2022, 11, 21, 0, 0, 0, 0);
             // 
             // label1
             // 
@@ -243,25 +247,25 @@ namespace AVANCE2.Ventanas
             this.label7.TabIndex = 21;
             this.label7.Text = "Descripcion";
             // 
-            // button4
+            // btnAtras
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.button4.Location = new System.Drawing.Point(1300, 12);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(53, 47);
-            this.button4.TabIndex = 38;
-            this.button4.Text = "↩";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnAtras.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAtras.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnAtras.Location = new System.Drawing.Point(1300, 12);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(53, 47);
+            this.btnAtras.TabIndex = 38;
+            this.btnAtras.Text = "↩";
+            this.btnAtras.UseVisualStyleBackColor = false;
+            this.btnAtras.Click += new System.EventHandler(this.button4_Click);
             // 
-            // textBox1
+            // tbNombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(208, 81);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(193, 22);
-            this.textBox1.TabIndex = 1;
+            this.tbNombre.Location = new System.Drawing.Point(208, 81);
+            this.tbNombre.Name = "tbNombre";
+            this.tbNombre.Size = new System.Drawing.Size(193, 22);
+            this.tbNombre.TabIndex = 1;
             // 
             // label9
             // 
@@ -290,30 +294,30 @@ namespace AVANCE2.Ventanas
             this.label12.TabIndex = 42;
             this.label12.Text = "Apellido materno";
             // 
-            // textBox2
+            // tbPaterno
             // 
-            this.textBox2.Location = new System.Drawing.Point(208, 118);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(193, 22);
-            this.textBox2.TabIndex = 2;
+            this.tbPaterno.Location = new System.Drawing.Point(208, 118);
+            this.tbPaterno.Name = "tbPaterno";
+            this.tbPaterno.Size = new System.Drawing.Size(193, 22);
+            this.tbPaterno.TabIndex = 2;
             // 
-            // textBox3
+            // tbMaterno
             // 
-            this.textBox3.Location = new System.Drawing.Point(208, 152);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(193, 22);
-            this.textBox3.TabIndex = 3;
+            this.tbMaterno.Location = new System.Drawing.Point(208, 152);
+            this.tbMaterno.Name = "tbMaterno";
+            this.tbMaterno.Size = new System.Drawing.Size(193, 22);
+            this.tbMaterno.TabIndex = 3;
             // 
-            // maskedTextBox6
+            // tbNumNomina
             // 
-            this.maskedTextBox6.BeepOnError = true;
-            this.maskedTextBox6.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            this.maskedTextBox6.Location = new System.Drawing.Point(208, 235);
-            this.maskedTextBox6.Mask = "99999";
-            this.maskedTextBox6.Name = "maskedTextBox6";
-            this.maskedTextBox6.Size = new System.Drawing.Size(193, 22);
-            this.maskedTextBox6.TabIndex = 5;
-            this.maskedTextBox6.ValidatingType = typeof(int);
+            this.tbNumNomina.BeepOnError = true;
+            this.tbNumNomina.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.tbNumNomina.Location = new System.Drawing.Point(208, 235);
+            this.tbNumNomina.Mask = "99999";
+            this.tbNumNomina.Name = "tbNumNomina";
+            this.tbNumNomina.Size = new System.Drawing.Size(193, 22);
+            this.tbNumNomina.TabIndex = 5;
+            this.tbNumNomina.ValidatingType = typeof(int);
             // 
             // label13
             // 
@@ -324,16 +328,16 @@ namespace AVANCE2.Ventanas
             this.label13.TabIndex = 45;
             this.label13.Text = "Número de nómina";
             // 
-            // maskedTextBox1
+            // tbNumCuenta
             // 
-            this.maskedTextBox1.BeepOnError = true;
-            this.maskedTextBox1.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            this.maskedTextBox1.Location = new System.Drawing.Point(208, 276);
-            this.maskedTextBox1.Mask = "99999";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(193, 22);
-            this.maskedTextBox1.TabIndex = 6;
-            this.maskedTextBox1.ValidatingType = typeof(int);
+            this.tbNumCuenta.BeepOnError = true;
+            this.tbNumCuenta.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.tbNumCuenta.Location = new System.Drawing.Point(208, 276);
+            this.tbNumCuenta.Mask = "99999";
+            this.tbNumCuenta.Name = "tbNumCuenta";
+            this.tbNumCuenta.Size = new System.Drawing.Size(193, 22);
+            this.tbNumCuenta.TabIndex = 6;
+            this.tbNumCuenta.ValidatingType = typeof(int);
             // 
             // label4
             // 
@@ -354,12 +358,12 @@ namespace AVANCE2.Ventanas
             this.label5.Text = "CURP";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // textBox5
+            // tbEmail
             // 
-            this.textBox5.Location = new System.Drawing.Point(208, 423);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(193, 22);
-            this.textBox5.TabIndex = 10;
+            this.tbEmail.Location = new System.Drawing.Point(208, 423);
+            this.tbEmail.Name = "tbEmail";
+            this.tbEmail.Size = new System.Drawing.Size(193, 22);
+            this.tbEmail.TabIndex = 10;
             // 
             // label6
             // 
@@ -371,17 +375,17 @@ namespace AVANCE2.Ventanas
             this.label6.Text = "Email";
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // dateTimePicker2
+            // dtpAlta
             // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(207, 384);
-            this.dateTimePicker2.MaxDate = new System.DateTime(2022, 11, 21, 0, 0, 0, 0);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.ShowCheckBox = true;
-            this.dateTimePicker2.Size = new System.Drawing.Size(192, 22);
-            this.dateTimePicker2.TabIndex = 9;
-            this.dateTimePicker2.Value = new System.DateTime(2022, 11, 21, 0, 0, 0, 0);
-            this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
+            this.dtpAlta.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpAlta.Location = new System.Drawing.Point(207, 384);
+            this.dtpAlta.MaxDate = new System.DateTime(2022, 11, 21, 0, 0, 0, 0);
+            this.dtpAlta.Name = "dtpAlta";
+            this.dtpAlta.ShowCheckBox = true;
+            this.dtpAlta.Size = new System.Drawing.Size(192, 22);
+            this.dtpAlta.TabIndex = 9;
+            this.dtpAlta.Value = new System.DateTime(2022, 11, 21, 0, 0, 0, 0);
+            this.dtpAlta.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 
             // label8
             // 
@@ -392,13 +396,13 @@ namespace AVANCE2.Ventanas
             this.label8.TabIndex = 53;
             this.label8.Text = "Fecha de alta";
             // 
-            // textBox6
+            // tbContra
             // 
-            this.textBox6.Location = new System.Drawing.Point(207, 462);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(193, 22);
-            this.textBox6.TabIndex = 11;
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            this.tbContra.Location = new System.Drawing.Point(207, 462);
+            this.tbContra.Name = "tbContra";
+            this.tbContra.Size = new System.Drawing.Size(193, 22);
+            this.tbContra.TabIndex = 11;
+            this.tbContra.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // label14
             // 
@@ -411,29 +415,29 @@ namespace AVANCE2.Ventanas
             this.label14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
-            // maskedTextBox2
+            // tbCURP
             // 
-            this.maskedTextBox2.BeepOnError = true;
-            this.maskedTextBox2.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            this.maskedTextBox2.Location = new System.Drawing.Point(208, 351);
-            this.maskedTextBox2.Mask = "AAAA-999999-AAA-AAA-AA";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(193, 22);
-            this.maskedTextBox2.TabIndex = 8;
+            this.tbCURP.BeepOnError = true;
+            this.tbCURP.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.tbCURP.Location = new System.Drawing.Point(208, 351);
+            this.tbCURP.Mask = "AAAA-999999-AAA-AAA-AA";
+            this.tbCURP.Name = "tbCURP";
+            this.tbCURP.Size = new System.Drawing.Size(193, 22);
+            this.tbCURP.TabIndex = 8;
             // 
-            // button5
+            // btnAgregar
             // 
-            this.button5.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button5.Location = new System.Drawing.Point(171, 553);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(147, 49);
-            this.button5.TabIndex = 56;
-            this.button5.Text = "+ Agregar";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnAgregar.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAgregar.Location = new System.Drawing.Point(171, 553);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(147, 49);
+            this.btnAgregar.TabIndex = 56;
+            this.btnAgregar.Text = "+ Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.button5_Click);
             // 
             // label3
             // 
@@ -450,34 +454,34 @@ namespace AVANCE2.Ventanas
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1596, 685);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.btnAgregar);
+            this.Controls.Add(this.tbCURP);
+            this.Controls.Add(this.tbContra);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.dtpAlta);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.tbEmail);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.tbNumCuenta);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.maskedTextBox6);
+            this.Controls.Add(this.tbNumNomina);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tbMaterno);
+            this.Controls.Add(this.tbPaterno);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.tbNombre);
+            this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.maskedTextBox5);
             this.Controls.Add(this.maskedTextBox4);
-            this.Controls.Add(this.maskedTextBox3);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.tbNumEmpleado);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.dgvEmp);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpNacimiento);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBox2);
@@ -490,7 +494,8 @@ namespace AVANCE2.Ventanas
             this.Controls.Add(this.label7);
             this.Name = "AGREGAR_EMPLEADO";
             this.Text = "AGREGAR EMPLEADO";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.AGREGAR_EMPLEADO_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmp)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -500,12 +505,12 @@ namespace AVANCE2.Ventanas
 
         private System.Windows.Forms.MaskedTextBox maskedTextBox5;
         private System.Windows.Forms.MaskedTextBox maskedTextBox4;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.MaskedTextBox tbNumEmpleado;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.DataGridView dgvEmp;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpNacimiento;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBox2;
@@ -516,26 +521,26 @@ namespace AVANCE2.Ventanas
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnAtras;
+        private System.Windows.Forms.TextBox tbNombre;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox6;
+        private System.Windows.Forms.TextBox tbPaterno;
+        private System.Windows.Forms.TextBox tbMaterno;
+        private System.Windows.Forms.MaskedTextBox tbNumNomina;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox tbNumCuenta;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tbEmail;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtpAlta;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox tbContra;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.MaskedTextBox tbCURP;
+        private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label label3;
     }
 }
