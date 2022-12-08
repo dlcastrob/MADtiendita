@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using System.Configuration;
 using System.Windows.Forms;
 
 namespace AVANCE2
@@ -39,60 +34,23 @@ namespace AVANCE2
             _conexion.Close();
         }
 
-        public bool Autentificar(string us, string ps)
-        {
-            bool isValid = false;
-            try
-            {
-                conectar();
-                string qry = "SP_ValidaUser";
-                _comandosql = new SqlCommand(qry, _conexion);
-                _comandosql.CommandType = CommandType.StoredProcedure;
-                _comandosql.CommandTimeout = 9000;
-
-                var parametro1 = _comandosql.Parameters.Add("@u", SqlDbType.Char, 20);
-                parametro1.Value = us;
-                var parametro2 = _comandosql.Parameters.Add("@p", SqlDbType.Char, 20);
-                parametro2.Value = ps;
-
-                _adaptador.SelectCommand = _comandosql;
-                _adaptador.Fill(_tabla);
-
-                if(_tabla.Rows.Count > 0)
-                {
-                    isValid = true;
-                }
-
-            }
-            catch(SqlException e)
-            {
-                isValid = false;
-            }
-            finally
-            {
-                desconectar();
-            }
-
-            return isValid;
-        }
 
         #region CAJEROS
-        public DataTable get_Cajeros()
+        public DataTable gestion_Empleados(string SP)
         {
             var msg = "";
             DataTable tabla = new DataTable();
             try
             {
                 conectar();
-                //nombre procedure
-                string qry = "Select Nombre, email, Fecha_modif from Usuarios where Activo = 0;";
+                string qry = "spGestionEmpleados";
                 _comandosql = new SqlCommand(qry, _conexion);
                 _comandosql.CommandType = CommandType.StoredProcedure;
                 _comandosql.CommandTimeout = 1200;
 
 
                 var parametro1 = _comandosql.Parameters.Add("@Accion", SqlDbType.Char, 1);
-                parametro1.Value = "*";
+                parametro1.Value = "S";
 
                 _adaptador.SelectCommand = _comandosql;
                 _adaptador.Fill(tabla);
@@ -390,7 +348,7 @@ namespace AVANCE2
                 parametro2.Value = depto;
 
                 _adaptador.InsertCommand = _comandosql;
-                
+
                 _comandosql.ExecuteNonQuery();
 
             }
@@ -403,7 +361,7 @@ namespace AVANCE2
             }
             finally
             {
-                desconectar();                
+                desconectar();
             }
 
             return add;

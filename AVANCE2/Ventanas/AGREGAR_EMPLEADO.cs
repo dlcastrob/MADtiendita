@@ -91,6 +91,8 @@ namespace AVANCE2.Ventanas
         // METER LA INFO DEL RENGLON DEL DGV A SU RESPECTIVA TEXT BOX
         private void dgvEmp_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
+  
             tbContra.Text = dgvEmp.CurrentRow.Cells[0].Value.ToString();
             tbNombre.Text = dgvEmp.CurrentRow.Cells[1].Value.ToString();
             tbPaterno.Text = dgvEmp.CurrentRow.Cells[2].Value.ToString();
@@ -103,7 +105,7 @@ namespace AVANCE2.Ventanas
             tbCURP.Text = dgvEmp.CurrentRow.Cells[10].Value.ToString();
             tbEmail.Text = dgvEmp.CurrentRow.Cells[11].Value.ToString();
             llenar_tabla();
-
+            
         }
 
         
@@ -134,6 +136,11 @@ namespace AVANCE2.Ventanas
 
         private void AGREGAR_EMPLEADO_Load(object sender, EventArgs e)
         {
+
+            var obj = new EnlaceDB();
+            var tablita = new DataTable();
+            tablita = obj.gestion_Empleados("spGestionEmpleados");
+            dgvEmp.DataSource = tablita;
             /*string consulta = "select * from CAJERO";
             SqlDataAdapter adaptador = new SqlDataAdapter(consulta, conexion);
             DataTable dt = new DataTable();
